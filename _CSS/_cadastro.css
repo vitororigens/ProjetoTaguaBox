@@ -2,14 +2,18 @@
 /* CSS Document */
 *{
 	padding: 0px;
-	margin: 5px;
+	margin: 0px;
+}
+#corpo{
+	padding: 120px;
+	margin: 0px;
 }
 
 fieldset{
 	border: 0;
 }
 
-body, input, button{
+#lateralDireita, input, button{
 	font-family: sans-serif;
 	font-size: 1em;
 }
@@ -94,3 +98,4 @@ fieldset.grupo .campo{
     margin: 0px;
     transition: background-color 1s;
 }
+
