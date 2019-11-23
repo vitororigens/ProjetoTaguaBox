@@ -1,12 +1,13 @@
 @charset "utf-8";
+
 /* CSS Document */
-*{
+* {
 	padding: 0px;
 	margin: 0px;
 }
-#corpoIndex{
+
+#corpoIndex {
 	padding: 120px;
 	margin: 0px;
 	text-align: center;
 }
-
