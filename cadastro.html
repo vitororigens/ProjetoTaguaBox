@@ -38,25 +38,17 @@
 					<h1><img src="_Imagens/56950.png" width="49" height="44">Cadastro de Funcionarios</h1>
 
 				</header>
-				<fieldset class="grupo">
+				
 					<div class="campo">
-						<label for="nome">Nome</label>
-						<input type="text" name="nome" id="nome" style="width: 15em" value="">
-
+						<input class="entradaText" type="text" name="nome" id="nome" style="width: 32em" placeholder="Nome" value="">
 					</div>
-					<div class="campo">
-						<label for="usuario">usuario</label>
-						<input type="text" name="usuario" id="usuario" style="width: 15em" value="">
-
-					</div>
-				</fieldset>
 				<fieldset class="grupo">
 					<div class="campo">
 						<label>Sexo</label>
 
 						<label>
-							<input type="radio" name="masculino" value="masculino">Masculino
-							<input type="radio" name="feminino" value="feminino">Femino
+							<input class="sexo" type="radio" name="masculino" value="masculino">Masculino
+							<input class="sexo" type="radio" name="feminino" value="feminino">Feminino
 						</label>
 
 					</div>
@@ -67,33 +59,27 @@
 				</fieldset>
 				<fieldset class="grupo">
 					<div class="campo">
-						<label for="cpf">CPF</label>
-						<input type="text" name="cpf" id="cpf" style="width: 15em" value="">
+						<input class="entradaText" type="text" name="cpf" id="cpf" style="width: 15em" placeholder="CPF" value="">
 
 					</div>
 					<div class="campo">
-						<label for="rg">RG</label>
-						<input type="text" name="rg" id="rg" style="width: 15em" value="">
+						<input class="entradaText" type="text" name="rg" id="rg" style="width: 15em" placeholder="RG" value="">
 					</div>
 
 				</fieldset>
 				<div class="campo">
-					<label for="email">E-mail</label>
-					<input type="email" name="email" id="email" style="width: 20em" value="">
+					<input class="entradaText" type="email" name="email" id="email" style="width: 20em" placeholder="E-mail" value="">
 				</div>
 				<div class="campo">
-					<label for="telefone">Telefone</label>
-					<input type="tel" name="telefone" id="telefone" style="width: 15em" value="">
+					<input class="entradaText" type="tel" name="telefone" id="telefone" style="width: 15em" placeholder="Telefone" value="">
 				</div>
 				<div class="campo">
-					<label for="cep">CEP</label>
-					<input type="text" name="cep" id="cep" style="width: 15em" value="">
+					<input class="entradaText" type="text" name="cep" id="cep" style="width: 15em" placeholder="CEP" value="">
 				</div>
 				<div>
 					<fieldset class="grupo">
 						<div class="campo">
-							<label>Cidade</label>
-							<input type="text" name="cidade" id="cidade" style="width: 15em" value="">
+							<input class="entradaText" type="text" name="cidade" id="cidade" style="width: 15em" spaceholder="Cidade" value="">
 						</div>
 						<div class="campo">
 							<label>Estado</label>
@@ -106,8 +92,7 @@
 					</fieldset>
 				</div>
 				<div class="campo">
-					<label for="endereco">Endereço</label>
-					<input type="text" name="endereco" id="endereco" style="width: 20em" value="">
+					<input class="entradaText" type="text" name="endereco" id="endereco" style="width: 20em" spaceholder="Endereço" value="">
 				</div>
 				<button class="botao" type="submit" name="cadastFunc">Cadastrar</button>
 			</form>
