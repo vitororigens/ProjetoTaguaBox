@@ -11,8 +11,6 @@ body {
 *,
 *:berfore,
 *:after {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
@@ -37,9 +35,6 @@ section {
 
 #lateral {
 	padding: 0 50px 0;
-	-moz-transition: all 0.5 ease;
-	-webkit-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
 	transition: all 0.5s ease;
 	font-size: 1em;
 	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,2989d8+50,207cca+51,7db9e8+100;Blue+Gloss+Default */
@@ -80,9 +75,6 @@ section {
 #lateral:focus,
 #lateral:active {
 	overflow: scroll;
-	-moz-transform: translate(320px, 0);
-	-webkit-transform: translate(320px, 0);
-	-o-transform: translate(320px, 0);
 	transform: translate(320px, 0);
 	padding-right: 0;
 }
@@ -125,18 +117,12 @@ section {
 	text-decoration: none;
 	padding: 0.8em 0 0.8em 1em;
 	display: block;
-	-moz-transition: all 1.2s ease;
-	-webkit-transition: all 1.2s ease;
-	-o-transition: all 1.2s ease;
 	transition: all 1.2s ease;
 }
 
 #menu li a:hover {
 	color: rgb(255, 255, 255);
 	background-color: rgba(255, 255, 255, 0.2);
-	-moz-transition: all 0.5s ease;
-	-webkit-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
 	transition: all 0.5s ease;
 }
 
@@ -189,13 +175,25 @@ section {
 	#menu li:first-child a {
 		border-top: 1px solid #ccc;
 	}
-}
+	}
 
-div#interface {
+	div#interface {
 	width: 1366px;
 	background-color: #F0F0F0;
 	margin: -20px auto 0px auto;
-	box-shadow: 0px 0px 10px rgba (0, 0, 0, 0.5);
 	padding: 10px;
 	
-}
+	}
+	.barraTopo{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 50px;
+	right: 0px;
+	font: bold 12px sans-serif;
+	border-bottom: 20px;
+	text-shadow: 0 auto 1 auto white;
+	border: 1px solid #9eb9c3;
+	box-shadow: 0px 0px 10px #c9c9c9;
+	
+	}
