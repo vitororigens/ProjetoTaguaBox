@@ -73,7 +73,7 @@ fieldset.grupo .campo {
 }
 
 .campo select option {
-	padding-right: 1em;
+	padding-right: 3em;
 }
 
 .campo input:focus,
