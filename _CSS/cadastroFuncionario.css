@@ -6,11 +6,6 @@
 	margin: 0px;
 }
 
-#corpo {
-	padding:0;
-	margin-left: 120px;
-	margin-top: 20px;
-}
 
 fieldset {
 	border: 0;
@@ -18,13 +13,6 @@ fieldset {
 
 input.entradaText{
 	height: 1.5em;
-}
-
-#lateralDireita,
-input,
-button {
-	font-family: sans-serif;
-	font-size: 1em;
 }
 
 .grupo:before,
