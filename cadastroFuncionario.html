@@ -32,13 +32,15 @@
 	</nav>
 
 	<div id="interface">
+					<div id="icone-funcionario">
+					<h1><img src="_Imagens/56950.png" width="49" height="44">Cadastro de Funcionarios</h1>
+					</div>
+					
 				<form action="#" method="post">
-						<div id="icone-funcionario">
-						<h1><img src="_Imagens/56950.png" width="49" height="44">Cadastro de Funcionarios</h1>
-						</div>
+					
 					
 						<div class="campo">
-							<input class="entradaText" type="text" name="nome" id="nome" style="width: 32em" placeholder="Nome" value="">
+							<input class="entradaText" type="text" name="nome" id="nome" style="width: 31.5em" placeholder="Nome" value="">
 						</div>
 					<fieldset class="grupo">
 						<div class="campo">
@@ -65,6 +67,16 @@
 						</div>
 	
 					</fieldset>
+					<fieldset class="grupo">
+							<div class="campo">
+								<input class="entradaText" type="text" name="cargo" id="cargo" style="width: 15em" placeholder="Cargo" value="">
+		
+							</div>
+							<div class="campo">
+								<input class="entradaText" type="text" name="setor" id="setor" style="width: 15em" placeholder="Setor" value="">
+							</div>
+		
+						</fieldset>
 					<div class="campo">
 						<input class="entradaText" type="email" name="email" id="email" style="width: 20em" placeholder="E-mail" value="">
 					</div>
@@ -74,27 +86,32 @@
 					<div class="campo">
 						<input class="entradaText" type="text" name="cep" id="cep" style="width: 15em" placeholder="CEP" value="">
 					</div>
-					<div>
-						<fieldset class="grupo">
-							<div class="campo">
-								<input class="entradaText" type="text" name="cidade" id="cidade" style="width: 15em" placeholder="Cidade" value="">
-							</div>
-							<div class="campo">
-								<label>Estados
-								<select name="estado" id="estado"> 
-									
+					
+					<div class="campo">
+							<input class="entradaText" type="text" name="endereco" id="endereco" style="width: 20em" placeholder="Endereço" value="">
+					</div>
+					<div class="campo">
+							<input class="entradaText" type="text" name="numero" id="numero" placeholder="N°" style="width: 3em" >
+							
+					</div>
+					<div class="campo">
+								<label>Estado
+								<select name="estado" id="estado">	
 								  <option value="">---</option>
 								  <option value="AC">AC</option>
 								</select>
 								</label>
-							</div>
-	
-					  </fieldset>
 					</div>
 					<div class="campo">
-						<input class="entradaText" type="text" name="endereco" id="endereco" style="width: 20em" placeholder="Endereço" value="">
+									<input class="entradaText" type="text" name="cidade" id="cidade" style="width: 15em" placeholder="Cidade" value="">
+								</div>
+					<div class="campo">
+										<input class="entradaText" type="text" name ="bairro" id="bairro" style="width: 15em" placeholder="Bairro" value="">
 					</div>
-					<button class="botao" type="submit" name="cadastFunc">Cadastrar</button>
+
+					<button id="cancelar" class="botao" type="submit" name="cancelar">Cancelar</button>
+					<button id="cad" class="botao" type="submit" name="cadastFunc">Cadastrar</button>
+
 				</form>
 			
 		</div>

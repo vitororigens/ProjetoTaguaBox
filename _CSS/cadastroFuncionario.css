@@ -33,6 +33,7 @@ input.entradaText{
 	margin-bottom: 0.2m;
 	color: #666;
 	display: block;
+	
 }
 
 fieldset.grupo .campo {
@@ -52,6 +53,10 @@ fieldset.grupo .campo {
 .campo input#estado,
 .campo input#endereco,
 .campo input#dataNasc,
+.campo input#setor,
+.campo input#cargo,
+.campo input#bairro,
+.campo input#numero,
 .campo select {
 	padding: 0px;
 	border: 1px solid #ccc;
@@ -98,14 +103,7 @@ label.checkbox {
 	cursor: pointer;
 }
 
-.grupo ul {
-	list-style: none;
-	left: 400px;
-
-}
-
-.grupo li {
-	padding: 0px;
-	margin: 0px;
-	transition: background-color 1s;
+input {
+	margin-top: 10px;
+	
 }
