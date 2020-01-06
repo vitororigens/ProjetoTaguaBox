@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-  	<title>Cadastrar Funcionario</title>
+  	<title>Cadastrar Cliente</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -119,7 +119,7 @@
           </div>
         </nav>
 
-        <h2 class="mb-4">Cadastrar Funcionario</h2>
+        <h2 class="mb-4">Cadastrar Cliente</h2>
           <form>
             <div class="form-group">
               <label for="idNome">Nome</label>
@@ -127,51 +127,39 @@
             </div>
           <div class="form-row">
             <div class="form-group col-md-6">
-              <label for="idCpf">CPF</label>
-              <input type="text" class="form-control" id="idCpf" placeholder="CPF" required>
+              <label for="idCpf">CPF/CNPJ</label>
+              <input type="text" class="form-control" id="idCpf" placeholder="CPF/CNPJ" required>
             </div>
             <div class="form-group col-md-6">
-              <label for="idRg">RG</label>
-              <input type="text" class="form-control" id="idRg" placeholder="RG" required>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="idFuncao">Função</label>
-            <select id="idFuncao" class="form-control" required>
-              <option>...</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="idEmail">E-mail</label>
-            <input type="email" class="form-control" id="idEmail" placeholder="E-mail" required>
-          </div>
-          <div class="form-group">
-            <label for="idEndereco">Endereço</label>
-            <input type="text" class="form-control" id="idEndereco" placeholder="Rua, Bairro, nº 0" required>
+                <label for="idTipoClie">Tipo de Cliente</label>
+                <select id="idTipoClie" class="form-control" required>
+                  <option selected>Escolher...</option>
+                  <option>Fisico</option>
+                  <option>Juridico</option>
+                </select>
+              </div>
           </div>
           <div class="form-row">
-            <div class="form-group col-md-5">
+            <div class="form-group col-md-6">
+              <label for="idEmail">E-mail</label>
+              <input type="text" class="form-control" id="idEmail" placeholder="E-mail" required>
+            </div>
+            <div class="form-group col-md-6">
               <label for="idTelefone">Telefone</label>
               <input type="text" class="form-control" id="idTelefone" placeholder="Telefone" required>
             </div>
-            <div class="form-group col-md-4">
-              <label for="inputEstado">Sexo</label>
-              <select id="inputEstado" class="form-control" required>
-                <option selected>Sexo</option>
-                <option>Masculino</option>
-                <option>Feminino</option>
-              </select>
-            </div>
-            <div class="form-group col-md-3">
-              <label for="idDate">Data de Nasc.</label>
-              <input type="date" class="form-control" id="idDate" required>
-            </div>
-          </div>
+        </div>
+          <div class="form-group">
+            <label for="idEndereco">Endereço</label>
+            <input type="text" class="form-control" id="idEndereco" placeholder="Rua, Bairro, nº 0" required>
+          </div> 
+
           <div class="form-row">
             <div class="form-group col-md-5">
               <label for="inputCity">Cidade</label>
               <input type="text" class="form-control" id="inputCity" placeholder="Cidade" required>
             </div>
+
             <div class="form-group col-md-4">
               <label for="inputEstado">Estado</label>
               <select id="inputEstado" class="form-control" required>
