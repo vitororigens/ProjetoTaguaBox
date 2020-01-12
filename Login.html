@@ -1,39 +1,52 @@
-﻿<!doctype html>
-<html>
+<link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<link href="css/Login.css" type="text/css" rel="stylesheet" />
+<!------ Include the above in your HEAD tag ---------->
 
-<head>
-	<meta charset="utf-8" />
-	<link href="css/Login.css" type="text/css" rel="stylesheet" />
-	<title>Login</title>
-</head>
+<link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<!-- Include the above in your HEAD tag -->
 
-<body>
-	<figcaption id="logo">
-		<img src="images/logo.png" width="206" height="183"/>
-	</figcaption>
-
-
-	<div id="interface">
-		<div id="interface-interna">
-			<div id="label-login">Login</div>
-			<div class="input-div" id="input-usuario">
-				<input type="text" placeholder="Usuario">
-			</div>
-			<div class="input-div" id="input-senha">
-				<input type="password" placeholder="Senha">
-			</div>
-			<div id="botoes">
-				<div id="botao"><a href="index.html">Login</a></div>
-				<div id="lembrar-senha"><input type="checkbox" />Lembrar minha senha.</div>
-			</div>
-			<div id="esqueceu-senha"><a><span style="font-weight:bold">Esqueceu a senha? </span></a>Clique aqui para enviar por
-				e-mail.</div>
-
-		</div>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<div class="main">
 
 
-	</div>
+    <div class="container">
+        <center>
+            <div class="middle">
+                <div id="login">
 
-</body>
+                    <form action="javascript:void(0);" method="get">
 
-</html>
+                        <fieldset class="clearfix">
+
+                            <p><span class="fa fa-user"></span><input type="text" Placeholder="Usuario" required></p>
+                            <!-- JS because of IE support; better: placeholder="Username" -->
+                            <p><span class="fa fa-lock"></span><input type="password" Placeholder="Senha" required></p>
+                            <!-- JS because of IE support; better: placeholder="Password" -->
+
+                            <div>
+                                <span style="width:48%; text-align:left;  display: inline-block;"><a class="small-text" href="#">Esqueceu a senha?</a></span>
+                                <span style="width:50%; text-align:right;  display: inline-block;"><input type="submit" value="Entrar"></span>
+                            </div>
+
+                        </fieldset>
+                        <div class="clearfix"></div>
+                    </form>
+
+                    <div class="clearfix"></div>
+
+                </div>
+                <!-- end login -->
+                <div class="logo"><img src="images/Logo2.png">
+
+                    <div class="clearfix"></div>
+                </div>
+
+            </div>
+        </center>
+    </div>
+
+</div>
