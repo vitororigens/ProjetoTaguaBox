@@ -2,7 +2,7 @@
 <html lang="pt-br">
 
 <head>
-    <title>Cadastrar Serviços</title>
+    <title>Cadastrar Produtos</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -32,7 +32,7 @@
                                 <a href="CadastroFornecedor.html">Fornecedor</a>
                             </li>
                             <li>
-                                <a href="#">Produto</a>
+                                <a href="CadastrarProduto.html">Produto</a>
                             </li>
                             <li>
                                 <a href="CadastroServiços.html">Serviço</a>
@@ -126,38 +126,91 @@
                 </div>
             </nav>
 
-            <h2 class="mb-4">Cadastrar Serviços</h2>
+            <h2 class="mb-4">Cadastrar Produto</h2>
             <form>
+                <h3 class="mb-4" style="color: #aeaeae;">Dados</h3>
                 <div class="form-row">
-                    <div class="form-group col-md-4">
-                        <label for="idCodServ">Codigo do serviço</label>
-                        <input type="text" class="form-control" id="idCodServ" required>
+                    <div class="form-group col-md-3">
+                        <label for="idCodProd">Codigo do produto</label>
+                        <input type="text" class="form-control" id="idCodProd" required>
                     </div>
 
-                    <div class="form-group col-md-4">
-                        <label for="idServico">Nome do Serviço</label>
-                        <input type="text" class="form-control" id="idServico" required>
+                    <div class="form-group col-md-3">
+                        <label for="idProd">Nome do produto</label>
+                        <input type="text" class="form-control" id="idProd" required>
                     </div>
 
-                    <div class="form-group col-md-4">
+                    <div class="form-group col-md-3">
                         <label for="idCodBarra">Codigo de barra</label>
-                        <input type="text" class="form-control" id="idCodBarra" required>
+                        <input type="text" class="form-control" id="idCodBarra">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="idTipoProd">Tipo de produto</label>
+                        <input type="text" class="form-control" id="idTipoProd" required>
                     </div>
                 </div>
 
 
                 <div class="form-row">
-                    <div class="form-group col-md-4">
-                        <label for="idTipoServ">Tipo de Serviço</label>
-                        <input type="text" class="form-control" id="idTipoServ">
+                    <div class="form-group col-md-3">
+                        <label for="idCategoria">Categoria do produto</label>
+                        <input type="text" class="form-control" id="idCategoria">
                     </div>
-                    <div class="form-group col-md-4">
-                        <label for="idValorUniServ">Volor unitário</label>
-                        <input type="text" class="form-control" id="idValorUniServ" placeholder="R$:" required>
+                    <div class="form-group col-md-3">
+                        <label for="idFornecedor">Fornecedor</label>
+                        <input type="text" class="form-control" id="idFornecedor">
                     </div>
-                    <div class="form-group col-md-4">
-                        <label for="idComServ">Comissão (%)</label>
-                        <input type="text" class="form-control" id="idComServ">
+                    <div class="form-group col-md-3">
+                        <label for="idCor">Cor do produto</label>
+                        <input type="text" class="form-control" id="idCor" required>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="idNotaFis">Deseja habilitar nota fiscal?</label>
+                        <select id="idNotaFis" class="form-control">
+                            <option selected>Sim</option>
+                            <option>Não</option>
+                        </select>
+
+                    </div>
+
+                </div>
+                <h3 class="mb-4" style="color: #aeaeae;">Valores</h3>
+
+                <div class="form-row">
+                    <div class="form-group col-md-3">
+                        <label for="idComisao">Comissão (%)</label>
+                        <input type="text" class="form-control" id="idComisao">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="idValorComp">Valor de Compra</label>
+                        <input type="text" class="form-control" id="idValorComp" placeholder="R$" required>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="idCor">Valor de Venda</label>
+                        <input type="text" class="form-control" id="idCor" placeholder="R$" required>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="idQuantidade">Quantidade</label>
+                        <input type="number" class="form-control" id="idQuantidade">
+                    </div>
+
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-3">
+                        <label for="idlargura">Largura (mm)</label>
+                        <input type="text" class="form-control" id="idlargura">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="idAltura">Altura (mm)</label>
+                        <input type="text" class="form-control" id="idAltura">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="idCor">Metragem quadrada m²</label>
+                        <input type="text" class="form-control" id="idCor" placeholder="R$">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="idQuantidade">Valor de compra</label>
+                        <input type="number" class="form-control" id="idQuantidade">
                     </div>
 
                 </div>
