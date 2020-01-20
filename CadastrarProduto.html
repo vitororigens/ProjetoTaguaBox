@@ -158,7 +158,10 @@
                     </div>
                     <div class="form-group col-md-3">
                         <label for="idFornecedor">Fornecedor</label>
-                        <input type="text" class="form-control" id="idFornecedor">
+                        <select class="form-control" id="idFornecedor">
+                            <option selected>...</option>
+                            </select>
+
                     </div>
                     <div class="form-group col-md-3">
                         <label for="idCor">Cor do produto</label>
@@ -170,10 +173,9 @@
                             <option selected>Sim</option>
                             <option>Não</option>
                         </select>
-
                     </div>
-
                 </div>
+
                 <h3 class="mb-4" style="color: #aeaeae;">Valores</h3>
 
                 <div class="form-row">
@@ -191,43 +193,89 @@
                     </div>
                     <div class="form-group col-md-3">
                         <label for="idQuantidade">Quantidade</label>
-                        <input type="number" class="form-control" id="idQuantidade">
+                        <input type="number" class="form-control" id="idQuantidade" value="0">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-3">
+                            <label for="idValorCust">Valor de custo</label>
+                            <input type="text" class="form-control" id="idValorCust" placeholder="R$">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="idDespAcess">Despesas acessórias</label>
+                            <input type="text" class="form-control" id="idDespAcess" placeholder="R$" required>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="idOutDesp">Outras despesas</label>
+                            <input type="text" class="form-control" id="idOutDesp" placeholder="R$" required>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="idCustFin">Custo final</label>
+                            <input type="number" class="form-control" id="idCustFin" readonly>
+                        </div>
+
                     </div>
 
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-md-3">
-                        <label for="idlargura">Largura (mm)</label>
-                        <input type="text" class="form-control" id="idlargura">
+                    <h3 class="mb-4" style="color: #aeaeae;">Detalhes</h3>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-3">
+                            <label for="idlargura">Largura (mm)</label>
+                            <input type="text" class="form-control" id="idlargura">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="idAltura">Altura (mm)</label>
+                            <input type="text" class="form-control" id="idAltura">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="idCor">Metragem quadrada (m²)</label>
+                            <input type="text" class="form-control" id="idCor">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="idPeso">Peso (kg)</label>
+                            <input type="number" class="form-control" id="idPeso">
+                        </div>
+
+
                     </div>
-                    <div class="form-group col-md-3">
-                        <label for="idAltura">Altura (mm)</label>
-                        <input type="text" class="form-control" id="idAltura">
-                    </div>
-                    <div class="form-group col-md-3">
-                        <label for="idCor">Metragem quadrada m²</label>
-                        <input type="text" class="form-control" id="idCor" placeholder="R$">
-                    </div>
-                    <div class="form-group col-md-3">
-                        <label for="idQuantidade">Valor de compra</label>
-                        <input type="number" class="form-control" id="idQuantidade">
+                    <h3 class="mb-4" style="color: #aeaeae;">Estoque</h3>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-3">
+                            <label for="idEstMin">Estoque minimo</label>
+                            <input type="number" class="form-control" id="idEstMin">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="idEstMax">Estoque maximo</label>
+                            <input type="number" class="form-control" id="idEstMax">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="idQuantAt">Quantidade atual</label>
+                            <input type="number" class="form-control" id="idQuantAt" required>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="idQuantAt">Quantidade atual</label>
+                            <input type="number" class="form-control" id="idQuantAt" required>
+                        </div>
                     </div>
 
-                </div>
-                <div class="form-control-plaintext">
-                    <textarea class="form-control valid" cols="30" rows="6"></textarea>
 
-                </div>
 
-                <button type="submit" class="btn btn-primary">Cadastrar</button>
+
+                    <div class="form-control-plaintext">
+                        <span style="color: #7c7c7c;">Descrição do produto</span>
+                        <textarea class="form-control valid" cols="30" rows="6"></textarea>
+
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Cadastrar</button>
             </form>
+            </div>
         </div>
-    </div>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
 </body>
 
 </html>
