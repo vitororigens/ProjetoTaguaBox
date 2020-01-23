@@ -2,7 +2,7 @@
 <html lang="pt-br">
 
 <head>
-    <title>Cadastrar Fornecedor</title>
+    <title>Cadastrar Funcionario</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -234,7 +234,6 @@
             </div>
         </nav>
 
-
         <!-- Page Content  -->
         <div id="content" class="p-4 p-md-5">
 
@@ -252,7 +251,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="index.html">Home</a>
+                                <a class="nav-link" href="#">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Sobre</a>
@@ -267,72 +266,63 @@
                     </div>
                 </div>
             </nav>
+            <nav class="navbar navbar-expand-sm">
+                <div class="container-fluid">
+                    <button type="submit" class="btn btn-primary">Adicionar</button>
 
-            <h2 class="mb-4">Cadastrar Cliente</h2>
-            <form>
-                <div class="form-group">
-                    <label for="idNome">Nome</label>
-                    <input type="text" class="form-control" id="idNome" placeholder="Nome" required>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="idCpf">CPF/CNPJ</label>
-                        <input type="text" class="form-control" id="idCpf" placeholder="CPF/CNPJ" required>
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="idTipoClie">Tipo de Fornecedor</label>
-                        <select id="idTipoClie" class="form-control" required>
-                  <option selected>Escolher...</option>
-                  <option>Fisico</option>
-                  <option>Juridico</option>
-                </select>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="idEmail">E-mail</label>
-                        <input type="text" class="form-control" id="idEmail" placeholder="E-mail" required>
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="idTelefone">Telefone</label>
-                        <input type="text" class="form-control" id="idTelefone" placeholder="Telefone" required>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="idEndereco">Endereço</label>
-                    <input type="text" class="form-control" id="idEndereco" placeholder="Rua, Bairro, nº 0" required>
-                </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
 
-                <div class="form-row">
-                    <div class="form-group col-md-5">
-                        <label for="inputCity">Cidade</label>
-                        <input type="text" class="form-control" id="inputCity" placeholder="Cidade" required>
-                    </div>
+                                <form class="form-inline">
+                                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                                </form>
 
-                    <div class="form-group col-md-4">
-                        <label for="inputEstado">Estado</label>
-                        <select id="inputEstado" class="form-control" required>
-                <option selected>Escolher...</option>
-                <option>...</option>
-              </select>
-                    </div>
-                    <div class="form-group col-md-3">
-                        <label for="inputCEP">CEP</label>
-                        <input type="text" class="form-control" id="inputCEP" placeholder="CEP" required>
+                            </li>
+
+                        </ul>
                     </div>
                 </div>
-                <div class="form-group">
+            </nav>
 
-                </div>
-                <button type="submit" class="btn btn-primary">Cadastrar</button>
-            </form>
+
+            <h2 class="mb-4">Bem vindo, Vitor Abreu! </h2>
+            <table class="table">
+                <caption>Lista de Funcionario</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">E-mail</th>
+                        <th scope="col">Numero</th>
+                        <th scope="col">Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>vitor santos</td>
+                        <td>@gmail</td>
+                        <td>(61)9 9996-3966</td>
+                        <td>ativo</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>lucas Araujo</td>
+                        <td>@hotmail</td>
+                        <td>(61)0 0000-0000</td>
+                        <td>desativado</td>
+                    </tr>
+                </tbody>
+            </table>
+
         </div>
-    </div>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
 </body>
 
 </html>
