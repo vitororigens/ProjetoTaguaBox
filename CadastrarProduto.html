@@ -288,7 +288,14 @@
                     </div>
                     <div class="form-group col-md-3">
                         <label for="idTipoProd">Tipo de produto</label>
-                        <input type="text" class="form-control" id="idTipoProd" required>
+                       <select class="form-control" id="idTipoProd">
+                           <option value="#">Acessorios</option>
+                           <option value="#">Espelhos</option>
+                           <option value="#">Pronta entrega</option>
+                           <option value="#">Vidros</option>
+
+                       </select>
+                        
                     </div>
                 </div>
 
@@ -296,7 +303,35 @@
                 <div class="form-row">
                     <div class="form-group col-md-3">
                         <label for="idCategoria">Categoria do produto</label>
-                        <input type="text" class="form-control" id="idCategoria">
+                        <select class="form-control" id="idCategoria">
+                            <option value="#">Acessórios diversos</option>
+                            <option value="#">Acessórios em vidro</option>
+                            <option value="#">Acessórios TQ</option>
+                            <option value="#">Box de abrir</option>
+                            <option value="#">Cortina de vidro com roldana</option>
+                            <option value="#">Cortina de vidro sem roldana</option>
+                            <option value="#">Espelhos</option>
+                            <option value="#">Ferramentas para instalação</option>
+                            <option value="#">Kits acessorios diversos</option>
+                            <option value="#">Kits acessorios para portas</option>
+                            <option value="#">Kits especiais</option>
+                            <option value="#">Kits especiais: acessorios e perfis</option>
+                            <option value="#">Kits multibox</option>
+                            <option value="#">Kits versatiks</option>
+                            <option value="#">Material para instalação</option>
+                            <option value="#">Modelados</option>
+                            <option value="#">Molas e fechaduras</option>
+                            <option value="#">PE - Box pronta entrega</option>
+                            <option value="#">PE - Janela pronta entrega</option>
+                            <option value="#">Perfis cortados - Box e varanda</option>
+                            <option value="#">Perfis em barra - Box e varanda</option>
+                            <option value="#">Porta de corre TQ - acessorios e alumunios</option>
+                            <option value="#">Serviços</option>
+                            <option value="#">Vidros especiais engenharia</option>
+                            <option value="#">Vidros comum - cortado</option>
+                            <option value="#">vidros engenharia </option>
+                            <option value="#">Vidros laminados</option>
+                        </select>
                     </div>
                     <div class="form-group col-md-3">
                         <label for="idFornecedor">Fornecedor</label>
@@ -337,6 +372,7 @@
                         <label for="idQuantidade">Quantidade</label>
                         <input type="number" class="form-control" id="idQuantidade" value="0">
                     </div>
+                </div>
                     <div class="form-row">
                         <div class="form-group col-md-3">
                             <label for="idValorCust">Valor de custo</label>
@@ -391,11 +427,11 @@
                             <input type="number" class="form-control" id="idEstMax">
                         </div>
                         <div class="form-group col-md-3">
-                            <label for="idQuantAt">Quantidade atual</label>
+                            <label for="idQuantAt">Estoque atual</label>
                             <input type="number" class="form-control" id="idQuantAt" required>
                         </div>
                         <div class="form-group col-md-3">
-                            <label for="idQuantAt">Quantidade atual</label>
+                            <label for="idQuantAt">Estoque ideal</label>
                             <input type="number" class="form-control" id="idQuantAt" required>
                         </div>
                     </div>
