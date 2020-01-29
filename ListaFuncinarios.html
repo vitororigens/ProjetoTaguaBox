@@ -301,6 +301,7 @@
                     </tr>
                 </thead>
                 <tbody>
+                    @foreach($funcionarios as $funcionarios)
                     <tr>
                         <th scope="row">1</th>
                         <td>vitor santos</td>
@@ -315,7 +316,7 @@
                     </tr>
                     <tr>
                         <th scope="row">2</th>
-                        <td>lucas Araujo</td>
+                        <td>{{$nome->nome}}</td>
                         <td>@hotmail</td>
                         <td>(61)0 0000-0000</td>
                         <td>desativado</td>
