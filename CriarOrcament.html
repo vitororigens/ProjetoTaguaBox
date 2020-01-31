@@ -13,20 +13,20 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/98046bca06.js" crossorigin="anonymous"></script>
     <style>
-    aside{
-	display: block;
-	float: left;
-	padding: 50px;
-	margin-top: 11px;
-}
-section{
-    display: block;
-	width: 500px;
-	float: left;
-	border-right: 1px solid #aeaeae;
-	padding-right: 50px;
-}
-
+        aside {
+            display: block;
+            float: left;
+            padding: px 50px;
+        }
+        
+        section {
+            display: block;
+            width: 400px;
+            float: left;
+            border-right: 1px solid #aeaeae;
+            padding-right: 50px;
+            padding-top: 50px;
+        }
     </style>
 </head>
 
@@ -282,11 +282,16 @@ section{
                     </div>
                 </div>
             </nav>
-        <section>
-            <div id="container">
-                <h2 class="mb-4">Orçamento</h2>
             <form>
-                <h3 class="mb-4" style="color: #aeaeae;">Detalhes</h3>
+                <h2 class="mb-4">Orçamento</h2>
+                <h3 class="mb-4" style="color: #aeaeae;">Detalhes do projeto</h3>
+                <div class=" form-group ">
+                    <label for=" projeto ">Selecione seu projeto</label>
+                    <select class=" form-control " name=" projeto " id=" projeto ">
+                        <option value=" # ">porta varanda 4 folhas</option>
+                        <option value=" # ">porta varanda 2 folhas</option>
+                    </select>
+                </div>
                 <div class="form-group">
                     <label for="idCorVid">Cor do vidro</label>
                     <select class="form-control" name="corVidro" id="idCorVid">
@@ -298,16 +303,7 @@ section{
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-4">
-                        <label for="idCorVid">Cor do vidro</label>
-                        <select class="form-control" name="corVidro" id="idCorVid">
-                            <option value="#">Bronze</option>
-                            <option value="#">Fumê</option>
-                            <option value="#" selected>Incolor</option>
-                            <option value="#">Verde</option>
-                        </select>
-                    </div>
-                    <div class="form-group col-md-4">
-                        <label for="idCorAces">Acessorios</label>
+                        <label for="idCorAces">Acessórios</label>
                         <select class="form-control" name="corACessorio" id="idCorAces">
                             <option value="#">Branco</option>
                             <option value="#">Brilho</option>
@@ -319,53 +315,83 @@ section{
                     </div>
                     <div class="form-group col-md-4">
                         <label for="idEspessura">Espessura</label>
-                        <select class="form-control" name="Espessura id="idEspessura">
-                            <option value="#">4mm</option>
-                            <option value="#">6mm</option>
-                            <option value="#" selected>8mm</option>
-                            <option value="#">10mm</option>
-                            <option value="#">12mm</option>
-                            <option value="#">15mm</option>
-                            <option value="3">19mm</option>
+                        <select class="form-control" name="Espessura id=" idEspessura ">
+                            <option value=" # ">4mm</option>
+                            <option value=" # ">6mm</option>
+                          <option value=" # " selected>8mm</option>
+                            <option value=" # ">10mm</option>
+                            <option value=" # ">12mm</option>
+                            <option value=" # ">15mm</option>
+                            <option value=" 3 ">19mm</option>
                         </select>
-                        
                     </div>
-
+                    <div class="form-group col-md-4 ">
+                        <label for="idPuxador ">Puxador</label>
+                        <select class="form-control " name="puxador " id="idPuxador ">
+                            <option value="# ">Selecione...</option>
+                            <option value="# "></option>
+                            <option value="# "></option>
+                            <option value="# "></option>
+                        </select>
+                    </div>   
                 </div>
-                <h3 class="mb-4" style="color: #aeaeae;">Medidas</h3>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="idLargura">largura vão</label>
-                        <input type="number" class="form-control" name="largura" id="idLargura"> 
-                    </div>
-                    
-                    <div class="form-group col-md-6">
-                        <label for="idAltura">Altura vão</label>
-                        <input type="number" class="form-control" name="altura" id="idAltura">
-                    </div>
-
-                </div>
-                <button type="submit" class="btn btn-primary">Calcular</button>
-            </form>
+        <h3 class=" mb-4 " style=" color: #aeaeae; ">Medidas</h3>
+        <div class=" form-row ">
+            <div class=" form-group col-md-6 ">
+                <label for=" idLargura ">largura vão</label>
+                <input type=" number " class=" form-control " name=" largura " id=" idLargura "> 
             </div>
-        </section>
-        <aside>
-            <h3 class="mb-4" style="color: #aeaeae;">Projeto</h3>
-                <div class="form-group">
-                    <label for="projeto">Selecione seu projeto</label>
-                    <select class="form-control" name="projeto" id="projeto">
-                        <option value="#">porta varanda 4 folhas</option>
-                        <option value="#">porta varanda 2 folhas</option>
-                    </select>
-                </div>      
-        </aside>
+            
+            <div class=" form-group col-md-6 ">
+                <label for=" idAltura ">Altura vão</label>
+                <input type=" number " class=" form-control " name=" altura " id=" idAltura ">
+            </div>
         </div>
+        <div>
+        <button type=" submit " class=" btn btn-primary ">Calcular</button>
+        </div>
+
+                <section>
+                    <h3 class="mb-4 " style="color: #aeaeae; ">Projeto</h3>
+                    <div class="form-group ">
+                        <label for="idVidMetro ">metragem do projeto (m²)</label>
+                        <input type="number " class="form-control " name="vidroMetro " id="idVidMetro " readonly>
+                    </div>   
+                    <div class="form-group ">
+                        <label for="idVedapoera "> valor Vidro(sub-total)</label>
+                        <input type="number " class="form-control " name="valorVidro " id="idVidro " readonly>
+                    </div>    
+                    <div class="form-group ">
+                        <label for="idCttp ">valor CTTP</label>
+                        <input type="number " class="form-control " name="cttp " id="idCttp " readonly>
+                    </div>  
+                    <div class="form-group ">
+                        <label for="idPuFixo ">PU-Fixo</label>
+                        <input type="number " class="form-control " name="puFixo " id="idPuFixo " readonly>
+                    </div>    
+                    <div class="form-group ">
+                        <label for="idVidro ">PU-Varanda</label>
+                        <input type="number " class="form-control " name="valorVidro " id="idVidro " readonly>
+                    </div> 
+                    <div class="form-group ">
+                        <label for="idVedapoera ">Vedapoera</label>
+                        <input type="number " class="form-control " name="vedapoera " id="idVedapoera " readonly>
+                    </div> 
+                    <div class="form-group ">
+                        <label for="idVedapress ">Vedapress</label>
+                        <input type="number " class="form-control " name="valorVidro " id="idVedapress " readonly>
+                    </div> 
+             </section>
+        <aside>
+                   
+        </aside>
+        </form>
     </div>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/jquery.min.js "></script>
+    <script src="js/popper.js "></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script src="js/main.js "></script>
 </body>
 
 </html>
