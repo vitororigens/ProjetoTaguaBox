@@ -11125,3 +11125,16 @@ a[data-toggle="collapse"] {
 .footer p {
     color: rgba(255, 255, 255, 0.5);
 }
+
+.containerUser {
+    border: 1px solid #000;
+    height: 150px;
+    width: 200px;
+    text-align: center;
+    font-size: 0.9em;
+    position: relative;
+}
+
+.containerUser button {
+    margin-top: 70px;
+}
