@@ -294,12 +294,16 @@
                         <label for="idTipoProd">Tipo de produto</label>
                         <select class="form-control" id="idTipoProd">
                            <option value="#">Acessorios</option>
+                           <option value="#">Alimentos</option>
                            <option value="#">Aluminio</option>
-                           <option value="#">Espelhos</option>
-                           <option value="#">Pronta entrega</option>
+                           <option value="#">Diversos</option>
+                           <option value="#">Eletrodomesticos</option>
+                           <option value="#">Eletronicos</option>
+                           <option value="#">Iformatica</option>
+                           <option value="#">Moveis e Decoração</option>
                            <option value="#">Perfil</option>
+                           <option value="#">Telefonia</option>
                            <option value="#">Vidros</option>
-                          
 
                        </select>
 
@@ -309,8 +313,13 @@
 
                 <div class="form-row">
                     <div class="form-group col-md-3">
-                        <label for="idCategoria">Categoria do produto</label>
+                        <label for="idQuantidade">Quantidade</label>
+                        <input type="number" class="form-control" name="quantidade" id="idQuantidade">
+                    </div>
+                 <!--  <div class="form-group col-md-3">
+                        <label for="idCategoria">Adicionar a tabela?</label>
                         <select class="form-control" id="idCategoria">
+                            <option value="#">selecione</option>
                             <option value="#">Acessórios diversos</option>
                             <option value="#">Acessórios em vidro</option>
                             <option value="#">Acessórios TQ</option>
@@ -340,6 +349,7 @@
                             <option value="#">Vidros laminados</option>
                         </select>
                     </div>
+                    --> 
                     <div class="form-group col-md-3">
                         <label for="idFornecedor">Fornecedor</label>
                         <select class="form-control" id="idFornecedor">
@@ -348,8 +358,11 @@
 
                     </div>
                     <div class="form-group col-md-3">
-                        <label for="idCor">Cor do produto</label>
-                        <input type="text" class="form-control" id="idCor" required>
+                        <label for="habEstoque">habilitar Estoque?</label>
+                        <select id="habEstoque" class="form-control">
+                            <option selected>Sim</option>
+                            <option>Não</option>
+                        </select>
                     </div>
                     <div class="form-group col-md-3">
                         <label for="idNotaFis">Deseja habilitar nota fiscal?</label>
@@ -362,24 +375,6 @@
 
                 <h3 class="mb-4" style="color: #aeaeae;">Valores</h3>
 
-                <div class="form-row">
-                    <div class="form-group col-md-3">
-                        <label for="idComisao">Comissão (%)</label>
-                        <input type="text" class="form-control" id="idComisao">
-                    </div>
-                    <div class="form-group col-md-3">
-                        <label for="idValorComp">Valor de Compra</label>
-                        <input type="text" class="form-control" id="idValorComp" placeholder="R$" required>
-                    </div>
-                    <div class="form-group col-md-3">
-                        <label for="idCor">Valor de Venda</label>
-                        <input type="text" class="form-control" id="idCor" placeholder="R$" required>
-                    </div>
-                    <div class="form-group col-md-3">
-                        <label for="idQuantidade">Quantidade</label>
-                        <input type="number" class="form-control" id="idQuantidade" value="0">
-                    </div>
-                </div>
                 <div class="form-row">
                     <div class="form-group col-md-3">
                         <label for="idValorCust">Valor de custo</label>
@@ -400,6 +395,23 @@
 
                 </div>
 
+                <div class="form-row">
+                    <div class="form-group col-md-3">
+                        <label for="idLucro">lucro ultilizado %</label>
+                        <input type="text" class="form-control" id="idLucro" >
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="idValorSug">Valor de venda sugerido</label>
+                        <input type="text" class="form-control" id="idValorSug" readonly>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="idCor">Valor de Venda ultilizado</label>
+                        <input type="text" class="form-control" id="idCor" placeholder="R$">
+                    </div>
+                    
+                </div>
+               
+
                 <h3 class="mb-4" style="color: #aeaeae;">Detalhes</h3>
 
                 <div class="form-row">
@@ -419,28 +431,47 @@
                         <label for="idPeso">Peso (kg)</label>
                         <input type="number" class="form-control" id="idPeso">
                     </div>
-
-
                 </div>
+                <div class="form-row">
+                    <div class="form-group col-md-3">
+                        <label for="idCorProd">Cor</label>
+                        <input type="text" class="form-control" name="corProduto" id="idCorProd">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="idEspessura">Espessura</label>
+                        <input type="text" class="form-control" name="espessura" id="idEspessura">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="idTamanho">Tamanho</label>
+                        <input type="text" class="form-control" name="tamanho" id="idTamanho" >
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="idGenero">Gênero</label>
+                        <select class="form-control" name="genero" id="idGenero">
+                            <option value="#">Feminino</option>
+                            <option value="#">Masculino</option>
+                        </select>
+                    </div>
+                    
+                    
+                </div>
+
                 <h3 class="mb-4" style="color: #aeaeae;">Estoque</h3>
 
                 <div class="form-row">
-                    <div class="form-group col-md-3">
+                    <div class="form-group col-md-4">
                         <label for="idEstMin">Estoque minimo</label>
                         <input type="number" class="form-control" id="idEstMin">
                     </div>
-                    <div class="form-group col-md-3">
+                    <div class="form-group col-md-4">
                         <label for="idEstMax">Estoque maximo</label>
                         <input type="number" class="form-control" id="idEstMax">
                     </div>
-                    <div class="form-group col-md-3">
+                    <div class="form-group col-md-4">
                         <label for="idQuantAt">Estoque atual</label>
                         <input type="number" class="form-control" id="idQuantAt" required>
                     </div>
-                    <div class="form-group col-md-3">
-                        <label for="idQuantAt">Estoque ideal</label>
-                        <input type="number" class="form-control" id="idQuantAt" required>
-                    </div>
+                   
                 </div>
 
 
@@ -453,6 +484,7 @@
                 </div>
 
                 <button type="submit" class="btn btn-primary">Cadastrar</button>
+                <button type="submit" class="btn btn-danger" style="float: right;">Cancelar</button>
             </form>
         </div>
     </div>

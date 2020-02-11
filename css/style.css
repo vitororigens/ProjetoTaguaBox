@@ -10996,6 +10996,7 @@ h5,
     margin-bottom: 40px;
     -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    position: block;
 }
 
 .navbar-btn {
@@ -11126,15 +11127,37 @@ a[data-toggle="collapse"] {
     color: rgba(255, 255, 255, 0.5);
 }
 
-.containerUser {
+/*a parti daqui style fora do bootstrap*/
+
+
+.hidden {
     border: 1px solid #000;
-    height: 150px;
     width: 200px;
+    height: 150px;
     text-align: center;
     font-size: 0.9em;
+    display: none;
+    float: right;
+    margin-top: -40px;
     position: relative;
 }
 
-.containerUser button {
-    margin-top: 70px;
+.hidden button {
+    margin-top: 20px;
+}
+.bRight
+ {
+        margin-left: 20px;
+}
+
+.bLeft {
+         margin-right: 20px;
+}
+
+#jaIframe{
+    position: absolute;
+}
+
+.importante{
+    color: red;
 }
