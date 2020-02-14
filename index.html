@@ -282,8 +282,8 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Contato</a>
                             </li>
-                            <li class="nav-item active usuario" onClick="navUser()" >
-                                <a class="nav-link" href="#"  ><i class="fas fa-user-alt"></i> Vitor Abreu <i class="fas fa-caret-down"></i>
+                            <li class="nav-item active usuario" onClick="navUser()">
+                                <a class="nav-link" href="#"><i class="fas fa-user-alt"></i> Vitor Abreu <i class="fas fa-caret-down"></i>
                                 
                                 </a>
                             </li>
@@ -291,35 +291,186 @@
                     </div>
                 </div>
             </nav>
-            <div class="hidden" id="mostrarUser" >
+            <div class="hidden" id="mostrarUser">
                 <img src="images/icone-user.jpg" alt="#"> <br>
                 <i>vitor dos Santos Abreu</i>
-                <button  class="bLeft btn-dark">Meus dados</button>
+                <button class="bLeft btn-dark">Meus dados</button>
                 <button class="bRight btn-dark">Sair</button>
                 <script>
-                      function navUser(){
-                        if (document.getElementById('mostrarUser').style.display == 'none'){
+                    function navUser() {
+                        if (document.getElementById('mostrarUser').style.display == 'none') {
                             document.getElementById('mostrarUser').style.display = 'block'
-                        } else{
+                        } else {
                             document.getElementById("mostrarUser").style.display = 'none'
                         }
-}
+                    }
                 </script>
-              
+
             </div>
             <h2 class="mb-4">Bem vindo, Vitor Abreu! </h2>
-            <div class="embed-responsive embed-responsive-21by9">
-                <iframe id="jaIframe" class="embed-responsive-item" src="//ListaFuncinarios.html"></iframe>
-            </div>
+            <div class="box box-light">
+                <div class="box-body">
+                    <h3 class="txt text-secondary">Ultimos Orçamentos</h3>
+                    <div>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <td scope="col">Data</td>
+                                    <th scope="col">cliente</th>
+                                    <th scope="col">Projeto</th>
+                                    <th scope="col">Situação</th>
+                                </tr>
+                            </thead>
+                            <thead>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>02/02/2000</td>
+                                    <td>Ericsson</td>
+                                    <td>box 1,20 m²</td>
+                                    <td>Produção</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>02/02/2000</td>
+                                    <td>Ericsson</td>
+                                    <td>box 1,20 m²</td>
+                                    <td>Aguardando</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>02/02/2000</td>
+                                    <td>Ericsson</td>
+                                    <td>box 1,20 m²</td>
+                                    <td>Cancelado</td>
+                                </tr>
+                            </thead>
 
+                        </table>
+                    </div>
+                    <table class="table table-striped">
+                        <tbody>
+                            <tr>
+                                <td colspan="3">
+                                    <div class="text-right text-muted" style="padding-top:9px">
+                                        <i>
+                                        <a class="text-muted" href="CriarOrcament.html"><i class="fa fa-angle-double-right margin-right-5px"></i>Novo Orçamento</a>
+                                        </i>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="box box2 box-danger form-group col-md-6">
+                    <div class="box-body">
+                        <h3 class="txt text-danger">Contas a pagar</h3>
+                        <div>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <td scope="col">Vencimento</td>
+                                        <th scope="col">Descrição</th>
+                                        <th scope="col">Valor</th>
+                                        <th scope="col">Situação</th>
+                                    </tr>
+                                </thead>
+                                <thead>
+                                    <tr>
+                                        <td>02/02/2000</td>
+                                        <td>Ericsson</td>
+                                        <td>0,00</td>
+                                        <td>Vencida</td>
+                                    </tr>
+                                    <tr>
+                                        <td>02/02/2000</td>
+                                        <td>Ericsson</td>
+                                        <td>0,00</td>
+                                        <td>A vencer</td>
+                                    </tr>
+                                    <tr>
+                                        <td>02/02/2000</td>
+                                        <td>Ericsson</td>
+                                        <td>0,00</td>
+                                        <td>Vencida</td>
+                                    </tr>
+                                </thead>
+
+                            </table>
+                        </div>
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td colspan="3">
+                                        <div class="text-right text-muted" style="padding-top:9px">
+                                            <i>
+                                        <a class="text-muted" href="CriarOrcament.html"><i class="fa fa-angle-double-right margin-right-5px"></i>Ir para contas a pagar</a>
+                                            </i>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="box box3 box-success form-group col-md-6">
+                    <div class="box-body">
+                        <h3 class="txt text-success">Contas a receber</h3>
+                        <div>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <td scope="col">Vencimento</td>
+                                        <th scope="col">Descrição</th>
+                                        <th scope="col">Valor</th>
+
+                                    </tr>
+                                </thead>
+                                <thead>
+                                    <tr>
+                                        <td>02/02/2000</td>
+                                        <td>Ericsson</td>
+                                        <td>0,00</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>02/02/2000</td>
+                                        <td>Ericsson</td>
+                                        <td>0,00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>02/02/2000</td>
+                                        <td>Ericsson</td>
+                                        <td>0,00</td>
+                                    </tr>
+                                </thead>
+
+                            </table>
+                        </div>
+                        <table class="table table-striped">
+                            <tbody>
+                                <tr>
+                                    <td colspan="3">
+                                        <div class="text-right text-muted" style="padding-top:9px">
+                                            <i>
+                                        <a class="text-muted" href="CriarOrcament.html"><i class="fa fa-angle-double-right margin-right-5px"></i>Ir para contas a receber</a>
+                                            </i>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
 
-    </div>
-
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
 </body>
 
 </html>
