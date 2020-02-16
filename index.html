@@ -26,16 +26,16 @@
                         <a href="#idCadastro" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><span class="fa fa-list-alt"> Cadastrar</span></a>
                         <ul class="collapse list-unstyled" id="idCadastro">
                             <li>
-                                <a href="cadastro/ListaFuncinarios.html">Funcionario</a>
+                                <a href="ListaFuncinarios.html">Funcionario</a>
                             </li>
                             <li>
-                                <a href="cadastro/ListaClientes.html">Cliente</a>
+                                <a href="ListaClientes.html">Cliente</a>
                             </li>
                             <li>
-                                <a href="cadastro/ListaFornecedor.html">Fornecedor</a>
+                                <a href="ListaFornecedor.html">Fornecedor</a>
                             </li>
                             <li>
-                                <a href="cadastro/ListaProduto.html">Produto</a>
+                                <a href="ListaProduto.html">Produto</a>
                             </li>
                             <li>
                                 <a href="#">Serviço</a>
@@ -284,32 +284,34 @@
                             </li>
                             <li class="nav-item active usuario" onClick="navUser()" >
                                 <a class="nav-link" href="#"  ><i class="fas fa-user-alt"></i> Vitor Abreu <i class="fas fa-caret-down"></i>
-                                
+                                    <div class="hidden" id="mostrarUser" >
+                                        <img src="images/icone-user.jpg" alt="#"> <br>
+                                        <i>vitor dos Santos Abreu</i>
+                                        <button  class="bLeft btn-dark">Meus dados</button>
+                                        <button class="bRight btn-dark">Sair</button>
+                                        <script>
+                                              function navUser(){
+                                                if (document.getElementById('mostrarUser').style.display == 'none'){
+                                                    document.getElementById('mostrarUser').style.display = 'block'
+                                                } else{
+                                                    document.getElementById("mostrarUser").style.display = 'none'
+                                                }
+                        }
+                                        </script>
+                                      
+                                    </div>
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
-            <div class="hidden" id="mostrarUser" >
-                <img src="images/icone-user.jpg" alt="#"> <br>
-                <i>vitor dos Santos Abreu</i>
-                <button  class="bLeft btn-dark">Meus dados</button>
-                <button class="bRight btn-dark">Sair</button>
-                <script>
-                      function navUser(){
-                        if (document.getElementById('mostrarUser').style.display == 'none'){
-                            document.getElementById('mostrarUser').style.display = 'block'
-                        } else{
-                            document.getElementById("mostrarUser").style.display = 'none'
-                        }
-}
-                </script>
-              
-            </div>
+          
             <h2 class="mb-4">Bem vindo, Vitor Abreu! </h2>
             <div class="embed-responsive embed-responsive-21by9">
-                <iframe id="jaIframe" class="embed-responsive-item" src="//ListaFuncinarios.html"></iframe>
+                <iframe src="CriarOcament.html" id="jaIframe" class="embed-responsive-item" >
+                    
+                </iframe>
             </div>
 
         </div>

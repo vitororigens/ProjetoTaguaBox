@@ -10999,6 +10999,8 @@ h5,
     position: block;
 }
 
+
+
 .navbar-btn {
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -11138,8 +11140,10 @@ a[data-toggle="collapse"] {
     font-size: 0.9em;
     display: none;
     float: right;
-    margin-top: -40px;
-    position: relative;
+    margin-top: 18px;
+    margin-left: -45px;
+    position: absolute;
+
 }
 
 .hidden button {
@@ -11161,3 +11165,5 @@ a[data-toggle="collapse"] {
 .importante{
     color: red;
 }
+
+
