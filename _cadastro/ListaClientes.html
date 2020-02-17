@@ -2,16 +2,15 @@
 <html lang="pt-br">
 
 <head>
-    <title>Produtos</title>
+    <title>Cliente</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/98046bca06.js" crossorigin="anonymous"></script>
 </head>
 
@@ -20,7 +19,7 @@
     <div class="wrapper d-flex align-items-stretch">
         <nav id="sidebar">
             <div class="p-4 pt-5">
-                <a href="#" class="img logo rounded-square mb-5" style="background-image: url(images/Logo2.png);"></a>
+                <a href="#" class="img logo rounded-square mb-5" style="background-image: url(/images/Logo2.png);"></a>
                 <ul class="list-unstyled components mb-5">
                     <li class="active">
                         <a href="#idCadastro" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><span class="fa fa-list-alt"> Cadastrar</span></a>
@@ -256,7 +255,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">Home</a>
+                                <a class="nav-link" href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Sobre</a>
@@ -273,7 +272,7 @@
             </nav>
             <nav class="navbar navbar-expand-sm">
                 <div class="container-fluid">
-                    <button type="submit" class="btn btn-primary"><a href="CadastrarProduto.html" style="color:green;">Adicionar</a></button>
+                    <button type="submit" class="btn btn-primary"><a href="/_cadastro/CadastroCliente.html" style="color:green;">Adicionar</a></button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
@@ -290,29 +289,40 @@
                     </div>
                 </div>
             </nav>
-
-            <h2 class="mb-4">Vidros engenharia - Temperado</h2>
-            <table class="table table-sm">
+            <table class="table">
+                <caption>Lista de Clientes</caption>
                 <thead>
                     <tr>
-                        <th scope="col">Cod.</th>
-                        <th scope="col">Descrição</th>
-                        <th scope="col">Valor (m²)</th>
-                        <th scope="col">Prazo(Dias úteis)</th>
-                        <th scope="col">Taxa* (%)</th>
-                        <th scope="col">Prazo* (Dias úteis)</th>
-                        <th scope="col">Ação</th>
+                        <th scope="col">#</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">E-mail</th>
+                        <th scope="col">Numero</th>
+                        <th scope="col">Estado</th>
+                        <th scope="colgroup">Ações</th>
                     </tr>
                 </thead>
                 <tbody>
+                    @foreach($funcionarios as $funcionarios)
                     <tr>
-                        <td scope="row">VT86</td>
-                        <td>Incolor 8</td>
-                        <td>167,09</td>
-                        <td>05</td>
-                        <td>20%</td>
-                        <td>03</td>
+                        <th scope="row">1</th>
+                        <td>vitor santos</td>
+                        <td>@gmail</td>
+                        <td>(61)9 9996-3966</td>
+                        <td>ativo</td>
                         <td>
+                            <a class="btn btn-outline-success" title="visualizar"><i class="fas fa-search"></i></a>
+                            <a href="#" class="btn btn-outline-warning" title="Editar"><i class="fas fa-user-edit"></i></a>
+                            <a href="#" class="btn btn-outline-danger" title="Remove"><i class="fas fa-remove"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>{{$nome->nome}}</td>
+                        <td>@hotmail</td>
+                        <td>(61)0 0000-0000</td>
+                        <td>desativado</td>
+                        <td>
+                            <a class="btn btn-outline-success" title="visualizar"><i class="fas fa-search"></i></a>
                             <a href="#" class="btn btn-outline-warning" title="Editar"><i class="fas fa-user-edit"></i></a>
                             <a href="#" class="btn btn-outline-danger" title="Remove"><i class="fas fa-remove"></i></a>
                         </td>
@@ -322,12 +332,10 @@
 
         </div>
 
-    </div>
-
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/popper.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+        <script src="/js/main.js"></script>
 </body>
 
 </html>

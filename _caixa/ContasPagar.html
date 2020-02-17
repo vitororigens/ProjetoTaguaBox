@@ -2,17 +2,16 @@
 <html lang="pt-br">
 
 <head>
-    <title>Cadastrar Funcionario</title>
+    <title>Contas a pagar</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/98046bca06.js" crossorigin="anonymous"></script>
-    <script src="/js/cep.js"></script>
 </head>
 
 <body>
@@ -20,26 +19,25 @@
     <div class="wrapper d-flex align-items-stretch">
         <nav id="sidebar">
             <div class="p-4 pt-5">
-                <a href="#" class="img logo rounded-square mb-5" style="background-image: url(images/Logo2.png);"></a>
+                <a href="#" class="img logo rounded-square mb-5" style="background-image: url(/images/Logo2.png);"></a>
                 <ul class="list-unstyled components mb-5">
                     <li class="active">
-                        <a href="#idCadastro" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><span
-                                class="fa fa-list-alt"> Cadastrar</span></a>
+                        <a href="#idCadastro" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><span class="fa fa-list-alt"> Cadastrar</span></a>
                         <ul class="collapse list-unstyled" id="idCadastro">
                             <li>
-                                <a href="ListaFuncinarios.html"> Funcionario</a>
+                                <a href="ListaFuncinarios.html">Funcionario</a>
                             </li>
                             <li>
-                                <a href="CadastroCliente.html"> Cliente</a>
+                                <a href="CadastroCliente.html">Cliente</a>
                             </li>
                             <li>
-                                <a href="CadastroFornecedor.html"> Fornecedor</a>
+                                <a href="CadastroFornecedor.html">Fornecedor</a>
                             </li>
                             <li>
-                                <a href="CadastrarProduto.html"> Produto</a>
+                                <a href="CadastrarProduto.html">Produto</a>
                             </li>
                             <li>
-                                <a href="CadastroServiços.html"> Serviço</a>
+                                <a href="CadastroServiços.html">Serviço</a>
                             </li>
                         </ul>
                     </li>
@@ -59,8 +57,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#idVendas" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><span
-                                class="fa fa-cart-plus"> Vendas</span></a>
+                        <a href="#idVendas" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><span class="fa fa-cart-plus"> Vendas</span></a>
                         <ul class="collapse list-unstyled" id="idVendas">
                             <li>
                                 <a href="#">Espelhos</a>
@@ -126,8 +123,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#idNotaMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><span
-                                class="fas fa-sticky-note"> Notas Fiscais</span></a>
+                        <a href="#idNotaMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><span class="fas fa-sticky-note"> Notas Fiscais</span></a>
                         <ul class="collapse list-unstyled" id="idNotaMenu">
                             <li>
                                 <a href="#">Adicionar NFC-e</a>
@@ -241,7 +237,6 @@
 
             </div>
         </nav>
-
         <!-- Page Content  -->
         <div id="content" class="p-4 p-md-5">
 
@@ -249,12 +244,12 @@
                 <div class="container-fluid">
 
                     <button type="button" id="sidebarCollapse" class="btn btn-primary">
-                        <i class="fa fa-bars"></i>
-                        <span class="sr-only">Toggle Menu</span>
-                    </button>
+              <i class="fa fa-bars"></i>
+              <span class="sr-only">Toggle Menu</span>
+            </button>
                     <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fa fa-bars"></i>
-                    </button>
+                <i class="fa fa-bars"></i>
+            </button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
@@ -275,105 +270,80 @@
                 </div>
             </nav>
 
-            <h2 class="mb-4 fab fa-black-tie"> Cadastrar Funcionario</h2>
+            <h2 class="mb-4">Contas a pagar</h2>
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="idCodServ">Descrição do pagamento</label>
+                        <input type="text" class="form-control" id="idDecPag" required>
+                    </div>
 
-            <form method="GET" action=".">
-                <div class="form-group">
-                    <label for="idNome">Nome<i class="importante">*</i></label>
-                    <input type="text" class="form-control" id="idNome" name="nome" laceholder="Nome" required>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="idCpf">CPF<i class="importante">*</i ></label>
-                        <input type="text" class="form-control" id="idCpf" name="cpf" placeholder="CPF" required>
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="idRg">RG<i class="importante">*</i></label>
-                        <input type="text" class="form-control" id="idRg" name="rg" placeholder="RG" required>
-                    </div>
-                </div>
-                <div class="form-row">
                     <div class="form-group col-md-4">
-                        <label for="idTelefone">Telefone<i class="importante">*</i></label>
-                        <input type="text" class="form-control" id="idTelefone" name="telefone" placeholder="Telefone" required>
+                        <label for="idServico">Plano de contas</label>
+                        <input type="text" class="form-control" id="idServico" required>
                     </div>
+
                     <div class="form-group col-md-4">
-                        <label for="inputEstado">Sexo</label>
-                        <select id="inputEstado" name="sexo" class="form-control" required>
-                            <option selected>Sexo</option>
-                            <option>Masculino</option>
-                            <option>Feminino</option>
+                        <label for="idOcorrencia">Ocorrência</label>
+                        <select class="form-control" id="idOcorrencia">
+                            <option value="#">Unica</option>
+                            <option value="#">Parcelada</option>
                         </select>
                     </div>
-                    <div class="form-group col-md-4">
-                        <label for="idDate">Data de Nasc.</label>
-                        <input type="date" name="dtNascimento" class="form-control" id="idDate" required>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="idEmail">E-mail</label>
-                    <input type="email" class="form-control" id="idEmail" name="email" placeholder="E-mail" required>
-                </div>
-                <div class="form-group">
-                    <label for="idSetor">Setor<i class="importante">*</i></label>
-                    <select id="idSetor" class="form-control" name="setor" required>
-                        <option>...</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="idFuncao">Função<i class="importante">*</i></label>
-                    <select id="idFuncao" class="form-control" name="funcao" required>
-                        <option>...</option>
-                    </select>
-                </div>
-                
-                <div class="form-row">
-                    <div class="form-group col-md-4">
-                        <label for="cep">CEP<i class="importante">*</i></label>
-                        <input type="text" class="form-control" id="cep" name="cep" value="" placeholder="CEP" required maxlength="9"
-                        onblur="pesquisacep(this.value);">
-                    </div>
-                    <div class="form-group col-md-4">
-                        <label for="cidade">Cidade</label>
-                        <input type="text" class="form-control" id="cidade" name="cidade" placeholder="Cidade" required>
-                    </div>
-                    <div class="form-group col-md-4">
-                        <label for="uf">Estado</label>
-                        <input type="text" class="form-control" id="uf" name="cidade" required >
-                    </div>                    
                 </div>
 
+
                 <div class="form-row">
-                    <div class="form-group col-md-7">
-                        <label for="logradouro">Logradouro</label>
-                        <input type="text" class="form-control" id=rua name="logradouro"  required>
-                    </div>
-                    <div class="form-gorup col-md-1">
-                        <label for="numero">Número<i class="importante">*</i></label>
-                        <input type="number" class="form-control" id="numero" name="numero" >
+                    <div class="form-group col-md-4">
+                        <label for="idTipoServ">Valor bruto (R$)</label>
+                        <input type="text" class="form-control" id="idTipoServ" placeholder="0,00">
                     </div>
                     <div class="form-group col-md-4">
-                        <label for="complemento">Complemento</label>
-                        <input type="text" class="form-control" id="complemento" name="complemento">
+                        <label for="idValorUniServ">Juros (R$)</label>
+                        <input type="text" class="form-control" id="idValorUniServ" placeholder="0,00" required>
                     </div>
+                    <div class="form-group col-md-4">
+                        <label for="idComServ">Descontos (R$)</label>
+                        <input type="text" class="form-control" id="idComServ" placeholder="0,00">
+                    </div>
+
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-3">
+                        <label for="idEntidade">Entidade</label>
+                        <input type="text" class="form-control" id="idEntidade">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="#">******</label>
+                        <input type="text" class="form-control" id="#" required>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="idDataComp">Data da competência</label>
+                        <input type="date" class="form-control" id="idDataComp">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="idDataVenc">Data do vencimento</label>
+                        <input type="date" class="form-control" id="idDataVenc">
+                    </div>
+
+
+
                 </div>
                 <div class="form-control-plaintext">
-                    <span style="color: #7c7c7c;">Observações</span>
+                    <span style="color: #7c7c7c;">Descrição do serviço</span>
                     <textarea class="form-control valid" cols="30" rows="6"></textarea>
 
                 </div>
-                
-           
+
                 <button type="submit" class="btn btn-primary">Cadastrar</button>
-                <button type="submit" class="btn btn-danger" style="float: right;">Cancelar</button>
             </form>
         </div>
     </div>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/popper.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 
 </html>

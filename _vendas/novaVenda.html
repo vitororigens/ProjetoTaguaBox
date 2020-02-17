@@ -2,15 +2,16 @@
 <html lang="pt-br">
 
 <head>
-    <title>Cadastrar Serviços</title>
+    <title>Home</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/index.css">
     <script src="https://kit.fontawesome.com/98046bca06.js" crossorigin="anonymous"></script>
 </head>
 
@@ -25,25 +26,28 @@
                         <a href="#idCadastro" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><span class="fa fa-list-alt"> Cadastrar</span></a>
                         <ul class="collapse list-unstyled" id="idCadastro">
                             <li>
-                                <a href="ListaFuncinarios.html">Funcionario</a>
+                                <a href="cadastro/ListaFuncinarios.html">Funcionario</a>
                             </li>
                             <li>
-                                <a href="CadastroCliente.html">Cliente</a>
+                                <a href="cadastro/ListaClientes.html">Cliente</a>
                             </li>
                             <li>
-                                <a href="CadastroFornecedor.html">Fornecedor</a>
+                                <a href="cadastro/ListaFornecedor.html">Fornecedor</a>
                             </li>
                             <li>
-                                <a href="CadastrarProduto.html">Produto</a>
+                                <a href="cadastro/ListaProduto.html">Produto</a>
                             </li>
                             <li>
-                                <a href="CadastroServiços.html">Serviço</a>
+                                <a href="#">Serviço</a>
                             </li>
                         </ul>
                     </li>
                     <li>
                         <a href="#idEstoqueMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><span class="fa fa-box"> Estoque</span></a>
                         <ul class="collapse list-unstyled" id="idEstoqueMenu">
+                            <li>
+                                <a href="#">Movimentação</a>
+                            </li>
                             <li>
                                 <a href="#">Acessorios</a>
                             </li>
@@ -52,6 +56,12 @@
                             </li>
                             <li>
                                 <a href="#">Pronta entrega</a>
+                            </li>
+                            <li>
+                                <a href="#">Cotação</a>
+                            </li>
+                            <li>
+                                <a href="#">Compras</a>
                             </li>
 
                         </ul>
@@ -69,7 +79,7 @@
                                 <a href="#">Serviços</a>
                             </li>
                             <li>
-                                <a href="#">Vidros</a>
+                                <a href="/_vendas/CriarOrcament.html">Vidros</a>
                             </li>
                         </ul>
                     </li>
@@ -214,6 +224,9 @@
                         </ul>
                     </li>
                     <li>
+                        <a href="#"><span class="fa fa-book"> Tabela</span></a>
+                    </li>
+                    <li>
                         <a href="#"><span class="fa fa-edit"> Contratos</span></a>
                     </li>
                     <li>
@@ -221,6 +234,9 @@
                     </li>
                     <li>
                         <a href="#"><span class="fa fa-address-book"> Agenda</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="fa fa-tools"> Configuração</span></a>
                     </li>
                 </ul>
 
@@ -255,7 +271,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="index.html">Home</a>
+                                <a class="nav-link" href="#">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Sobre</a>
@@ -266,63 +282,133 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Contato</a>
                             </li>
+                            <li class="nav-item active usuario" onClick="navUser()">
+                                <a class="nav-link" href="#"><i class="fas fa-user-alt"></i> Vitor Abreu <i class="fas fa-caret-down"></i>
+                                
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </nav>
+            <div class="hidden" id="mostrarUser">
+                <img src="images/icone-user.jpg" alt="#"> <br>
+                <i>vitor dos Santos Abreu</i>
+                <button class="bLeft btn-dark">Meus dados</button>
+                <button class="bRight btn-dark">Sair</button>
+                <script>
+                    function navUser() {
+                        if (document.getElementById('mostrarUser').style.display == 'none') {
+                            document.getElementById('mostrarUser').style.display = 'block'
+                        } else {
+                            document.getElementById("mostrarUser").style.display = 'none'
+                        }
+                    }
+                </script>
 
-            <h2 class="mb-4">Cadastrar Serviços</h2>
-            <form>
-                <div class="form-row">
-                    <div class="form-group col-md-4">
-                        <label for="idCodServ">Codigo do serviço</label>
-                        <input type="text" class="form-control" id="idCodServ" required>
-                    </div>
-
-                    <div class="form-group col-md-4">
-                        <label for="idServico">Nome do Serviço</label>
-                        <input type="text" class="form-control" id="idServico" required>
-                    </div>
-                    <div class="form-group col-md-4">
-                        <label for="idTipoServ">Tipo de Serviço</label>
-                        <input type="text" class="form-control" id="idTipoServ">
-                    </div>
+            </div>
+            <h2 class="mb-4">Nova venda</h2>
+            <h3 class="mb-3" style="color: #aeaeae;">Dados da venda</h3>
+            <div class="form-row">
+                <div class="form-group col-md-2">
+                    <label for="numero">Número</label>
+                    <input type="number" class="form-control" name="numero" id="numero">
                 </div>
-
-
-                <div class="form-row">
-
-                    <div class="form-group col-md-4">
-                        <label for="idValorUniServ">Valor</label>
-                        <input type="text" class="form-control" id="idValorUniServ" placeholder="R$:" required>
-                    </div>
-                   
-                    <div class="form-group col-md-4">
-                        <label for="idMquadrado">Metragem quadrada (m²)</label>
-                        <input type="text" name="mQuadrado" id="idMquadrado" class="form-control">
-                    </div>
-                    <div class="form-group col-md-4">
-                        <label for="idMlinear">Metragem linear (m)</label>
-                        <input type="text" name="mLinear" id="idMlinear" class="form-control">
-                    </div>
+                <div class="form-group col-md-5">
+                    <label for="cliente">Nome do cliente</label>
+                    <input type="text" class="form-control" name="cliente" id="cliente">
+                </div>
+                <div class="form-group col-md-5">
+                    <label for="vendendor">Nome do vendedor</label>
+                    <input type="text" class="form-control" name="vendendor" id="vendedor">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-2">
+                    <label for="data">Data</label>
+                    <input type="text" class="form-control" name="data" id="data">
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="dataValidade">Data entrega</label>
+                    <input type="text" class="form-control" name="dataValidade" id="dataValidade">
 
                 </div>
-                <div class="form-control-plaintext">
-                    <span style="color: #7c7c7c;">Descrição do serviço</span>
-                    <textarea class="form-control valid" cols="30" rows="6"></textarea>
-
+            </div>
+            <h3 class="mb-3" style="color: #aeaeae;">Detalhes do projeto</h3>
+            <div class=" form-group ">
+                <label for=" projeto ">Selecione seu projeto</label>
+                <select class=" form-control " name=" projeto " id=" projeto ">
+                    <option value=" # ">porta varanda 4 folhas</option>
+                    <option value=" # ">porta varanda 2 folhas</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="idCorVid">Cor do vidro</label>
+                <select class="form-control" name="corVidro" id="idCorVid">
+                    <option value="#">Bronze</option>
+                    <option value="#">Fumê</option>
+                    <option value="#" selected>Incolor</option>
+                    <option value="#">Verde</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="idCorAces">Acessórios</label>
+                    <select class="form-control" name="corACessorio" id="idCorAces">
+                        <option value="#">Branco</option>
+                        <option value="#">Brilho</option>
+                        <option value="#">Bronze</option>
+                        <option value="#">Champanhe</option>
+                        <option value="#" selected>Fosco</option>
+                        <option value="#">Preto</option>
+                    </select>
                 </div>
-
-                <button type="submit" class="btn btn-primary">Cadastrar</button>
-                <button type="submit" class="btn btn-danger" style="float: right;">Cancelar</button>
-            </form>
+                <div class="form-group col-md-4">
+                    <label for="idEspessura">Espessura</label>
+                    <select class="form-control" name="Espessura id=" idEspessura ">
+                        <option value=" # ">4mm</option>
+                        <option value=" # ">6mm</option>
+                      <option value=" # " selected>8mm</option>
+                        <option value=" # ">10mm</option>
+                        <option value=" # ">12mm</option>
+                        <option value=" # ">15mm</option>
+                        <option value=" 3 ">19mm</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-4 ">
+                    <label for="idPuxador ">Puxador</label>
+                    <select class="form-control " name="puxador " id="idPuxador ">
+                        <option value="# ">Selecione...</option>
+                        <option value="# "></option>
+                        <option value="# "></option>
+                        <option value="# "></option>
+                    </select>
+                </div>   
+            </div>
+    <h3 class=" mb-4 " style=" color: #aeaeae; ">Medidas</h3>
+    <div class=" form-row ">
+        <div class=" form-group col-md-6 ">
+            <label for=" idLargura ">largura vão</label>
+            <input type=" number " class=" form-control " name=" largura " id=" idLargura "> 
+        </div>
+        
+        <div class=" form-group col-md-6 ">
+            <label for=" idAltura ">Altura vão</label>
+            <input type=" number " class=" form-control " name=" altura " id=" idAltura ">
         </div>
     </div>
+    <div>
+    <button type=" submit " class=" btn btn-primary ">Calcular</button>
+    <button type="submit " class="btn btn-danger " style="float: right; ">Cancelar</button>
+    </div>
+    </form>
+</div>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+            <script src="/js/funcoes.js "></script>
+            <script src="/js/jquery.min.js "></script>
+            <script src="/js/popper.js "></script>
+            <script src="/js/bootstrap.min.js "></script>
+            <script src="/js/main.js "></script>
 </body>
 
 </html>

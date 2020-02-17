@@ -2,16 +2,17 @@
 <html lang="pt-br">
 
 <head>
-    <title>Cadastrar Produtos</title>
+    <title>Cadastrar Funcionario</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/98046bca06.js" crossorigin="anonymous"></script>
+    <script src="/js/cep.js"></script>
 </head>
 
 <body>
@@ -19,25 +20,26 @@
     <div class="wrapper d-flex align-items-stretch">
         <nav id="sidebar">
             <div class="p-4 pt-5">
-                <a href="#" class="img logo rounded-square mb-5" style="background-image: url(images/Logo2.png);"></a>
+                <a href="#" class="img logo rounded-square mb-5" style="background-image: url(/images/Logo2.png);"></a>
                 <ul class="list-unstyled components mb-5">
                     <li class="active">
-                        <a href="#idCadastro" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><span class="fa fa-list-alt"> Cadastrar</span></a>
+                        <a href="#idCadastro" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><span
+                                class="fa fa-list-alt"> Cadastrar</span></a>
                         <ul class="collapse list-unstyled" id="idCadastro">
                             <li>
-                                <a href="ListaFuncinarios.html">Funcionario</a>
+                                <a href="ListaFuncinarios.html"> Funcionario</a>
                             </li>
                             <li>
-                                <a href="CadastroCliente.html">Cliente</a>
+                                <a href="CadastroCliente.html"> Cliente</a>
                             </li>
                             <li>
-                                <a href="CadastroFornecedor.html">Fornecedor</a>
+                                <a href="CadastroFornecedor.html"> Fornecedor</a>
                             </li>
                             <li>
-                                <a href="CadastrarProduto.html">Produto</a>
+                                <a href="CadastrarProduto.html"> Produto</a>
                             </li>
                             <li>
-                                <a href="CadastroServiços.html">Serviço</a>
+                                <a href="CadastroServiços.html"> Serviço</a>
                             </li>
                         </ul>
                     </li>
@@ -57,7 +59,8 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#idVendas" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><span class="fa fa-cart-plus"> Vendas</span></a>
+                        <a href="#idVendas" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><span
+                                class="fa fa-cart-plus"> Vendas</span></a>
                         <ul class="collapse list-unstyled" id="idVendas">
                             <li>
                                 <a href="#">Espelhos</a>
@@ -123,7 +126,8 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#idNotaMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><span class="fas fa-sticky-note"> Notas Fiscais</span></a>
+                        <a href="#idNotaMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><span
+                                class="fas fa-sticky-note"> Notas Fiscais</span></a>
                         <ul class="collapse list-unstyled" id="idNotaMenu">
                             <li>
                                 <a href="#">Adicionar NFC-e</a>
@@ -238,7 +242,6 @@
             </div>
         </nav>
 
-
         <!-- Page Content  -->
         <div id="content" class="p-4 p-md-5">
 
@@ -246,12 +249,12 @@
                 <div class="container-fluid">
 
                     <button type="button" id="sidebarCollapse" class="btn btn-primary">
-              <i class="fa fa-bars"></i>
-              <span class="sr-only">Toggle Menu</span>
-            </button>
+                        <i class="fa fa-bars"></i>
+                        <span class="sr-only">Toggle Menu</span>
+                    </button>
                     <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fa fa-bars"></i>
-            </button>
+                        <i class="fa fa-bars"></i>
+                    </button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
@@ -272,227 +275,104 @@
                 </div>
             </nav>
 
-            <h2 class="mb-4 fas fa-box-open"> Cadastrar Produto</h2>
-            <form>
-                <h3 class="mb-4" style="color: #aeaeae;">Dados</h3>
-                <div class="form-row">
-                    <div class="form-group col-md-3">
-                        <label for="idCodProd">Codigo do produto</label>
-                        <input type="text" class="form-control" id="idCodProd" required>
-                    </div>
-
-                    <div class="form-group col-md-3">
-                        <label for="idProd">Nome do produto</label>
-                        <input type="text" class="form-control" id="idProd" required>
-                    </div>
-
-                    <div class="form-group col-md-3">
-                        <label for="idCodBarra">Codigo de barra</label>
-                        <input type="text" class="form-control" id="idCodBarra">
-                    </div>
-                    <div class="form-group col-md-3">
-                        <label for="idTipoProd">Tipo de produto</label>
-                        <select class="form-control" id="idTipoProd">
-                           <option value="#">Acessorios</option>
-                           <option value="#">Alimentos</option>
-                           <option value="#">Aluminio</option>
-                           <option value="#">Diversos</option>
-                           <option value="#">Eletrodomesticos</option>
-                           <option value="#">Eletronicos</option>
-                           <option value="#">Iformatica</option>
-                           <option value="#">Moveis e Decoração</option>
-                           <option value="#">Perfil</option>
-                           <option value="#">Telefonia</option>
-                           <option value="#">Vidros</option>
-
-                       </select>
-
-                    </div>
-                </div>
-
-
-                <div class="form-row">
-                    <div class="form-group col-md-3">
-                        <label for="idQuantidade">Quantidade</label>
-                        <input type="number" class="form-control" name="quantidade" id="idQuantidade">
-                    </div>
-                 <!--  <div class="form-group col-md-3">
-                        <label for="idCategoria">Adicionar a tabela?</label>
-                        <select class="form-control" id="idCategoria">
-                            <option value="#">selecione</option>
-                            <option value="#">Acessórios diversos</option>
-                            <option value="#">Acessórios em vidro</option>
-                            <option value="#">Acessórios TQ</option>
-                            <option value="#">Box de abrir</option>
-                            <option value="#">Cortina de vidro com roldana</option>
-                            <option value="#">Cortina de vidro sem roldana</option>
-                            <option value="#">Espelhos</option>
-                            <option value="#">Ferramentas para instalação</option>
-                            <option value="#">Kits acessorios diversos</option>
-                            <option value="#">Kits acessorios para portas</option>
-                            <option value="#">Kits especiais</option>
-                            <option value="#">Kits especiais: acessorios e perfis</option>
-                            <option value="#">Kits multibox</option>
-                            <option value="#">Kits versatiks</option>
-                            <option value="#">Material para instalação</option>
-                            <option value="#">Modelados</option>
-                            <option value="#">Molas e fechaduras</option>
-                            <option value="#">PE - Box pronta entrega</option>
-                            <option value="#">PE - Janela pronta entrega</option>
-                            <option value="#">Perfis cortados - Box e varanda</option>
-                            <option value="#">Perfis em barra - Box e varanda</option>
-                            <option value="#">Porta de corre TQ - acessorios e alumunios</option>
-                            <option value="#">Serviços</option>
-                            <option value="#">Vidros especiais engenharia</option>
-                            <option value="#">Vidros comum - cortado</option>
-                            <option value="#">vidros engenharia </option>
-                            <option value="#">Vidros laminados</option>
-                        </select>
-                    </div>
-                    --> 
-                    <div class="form-group col-md-3">
-                        <label for="idFornecedor">Fornecedor</label>
-                        <select class="form-control" id="idFornecedor">
-                            <option selected>...</option>
-                            </select>
-
-                    </div>
-                    <div class="form-group col-md-3">
-                        <label for="habEstoque">habilitar Estoque?</label>
-                        <select id="habEstoque" class="form-control">
-                            <option selected>Sim</option>
-                            <option>Não</option>
-                        </select>
-                    </div>
-                    <div class="form-group col-md-3">
-                        <label for="idNotaFis">Deseja habilitar nota fiscal?</label>
-                        <select id="idNotaFis" class="form-control">
-                            <option selected>Sim</option>
-                            <option>Não</option>
-                        </select>
-                    </div>
-                </div>
-
-                <h3 class="mb-4" style="color: #aeaeae;">Valores</h3>
-
-                <div class="form-row">
-                    <div class="form-group col-md-3">
-                        <label for="idValorCust">Valor de custo</label>
-                        <input type="text" class="form-control" id="idValorCust" placeholder="R$">
-                    </div>
-                    <div class="form-group col-md-3">
-                        <label for="idDespAcess">Despesas acessórias</label>
-                        <input type="text" class="form-control" id="idDespAcess" placeholder="R$" required>
-                    </div>
-                    <div class="form-group col-md-3">
-                        <label for="idOutDesp">Outras despesas</label>
-                        <input type="text" class="form-control" id="idOutDesp" placeholder="R$" required>
-                    </div>
-                    <div class="form-group col-md-3">
-                        <label for="idCustFin">Custo final</label>
-                        <input type="number" class="form-control" id="idCustFin" readonly>
-                    </div>
-
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group col-md-3">
-                        <label for="idLucro">lucro ultilizado %</label>
-                        <input type="text" class="form-control" id="idLucro" >
-                    </div>
-                    <div class="form-group col-md-3">
-                        <label for="idValorSug">Valor de venda sugerido</label>
-                        <input type="text" class="form-control" id="idValorSug" readonly>
-                    </div>
-                    <div class="form-group col-md-3">
-                        <label for="idCor">Valor de Venda ultilizado</label>
-                        <input type="text" class="form-control" id="idCor" placeholder="R$">
-                    </div>
-                    
-                </div>
-               
-
-                <h3 class="mb-4" style="color: #aeaeae;">Detalhes</h3>
-
-                <div class="form-row">
-                    <div class="form-group col-md-3">
-                        <label for="idlargura">Largura (mm)</label>
-                        <input type="text" class="form-control" id="idlargura">
-                    </div>
-                    <div class="form-group col-md-3">
-                        <label for="idAltura">Altura (mm)</label>
-                        <input type="text" class="form-control" id="idAltura">
-                    </div>
-                    <div class="form-group col-md-3">
-                        <label for="idCor">Metragem quadrada (m²)</label>
-                        <input type="text" class="form-control" id="idCor">
-                    </div>
-                    <div class="form-group col-md-3">
-                        <label for="idPeso">Peso (kg)</label>
-                        <input type="number" class="form-control" id="idPeso">
-                    </div>
+            <h2 class="mb-4">Funcionario</h2>
+            <form method="POST" action="#">
+                <div class="form-group">
+                    <label for="idNome">Nome<i class="importante">*</i></label>
+                    <input type="text" class="form-control" id="idNome" name="nome" laceholder="Nome" required>
                 </div>
                 <div class="form-row">
-                    <div class="form-group col-md-3">
-                        <label for="idCorProd">Cor</label>
-                        <input type="text" class="form-control" name="corProduto" id="idCorProd">
+                    <div class="form-group col-md-6">
+                        <label for="idCpf">CPF<i class="importante">*</i ></label>
+                        <input type="text" class="form-control" id="idCpf" name="cpf" placeholder="CPF" required>
                     </div>
-                    <div class="form-group col-md-3">
-                        <label for="idEspessura">Espessura</label>
-                        <input type="text" class="form-control" name="espessura" id="idEspessura">
+                    <div class="form-group col-md-6">
+                        <label for="idRg">RG<i class="importante">*</i></label>
+                        <input type="text" class="form-control" id="idRg" name="rg" placeholder="RG" required>
                     </div>
-                    <div class="form-group col-md-3">
-                        <label for="idTamanho">Tamanho</label>
-                        <input type="text" class="form-control" name="tamanho" id="idTamanho" >
-                    </div>
-                    <div class="form-group col-md-3">
-                        <label for="idGenero">Gênero</label>
-                        <select class="form-control" name="genero" id="idGenero">
-                            <option value="#">Feminino</option>
-                            <option value="#">Masculino</option>
-                        </select>
-                    </div>
-                    
-                    
                 </div>
-
-                <h3 class="mb-4" style="color: #aeaeae;">Estoque</h3>
-
                 <div class="form-row">
                     <div class="form-group col-md-4">
-                        <label for="idEstMin">Estoque minimo</label>
-                        <input type="number" class="form-control" id="idEstMin">
+                        <label for="idTelefone">Telefone<i class="importante">*</i></label>
+                        <input type="text" class="form-control" id="idTelefone" name="telefone" placeholder="Telefone" required>
                     </div>
                     <div class="form-group col-md-4">
-                        <label for="idEstMax">Estoque maximo</label>
-                        <input type="number" class="form-control" id="idEstMax">
+                        <label for="inputEstado">Sexo</label>
+                        <select id="inputEstado" name="sexo" class="form-control" required>
+                            <option selected>Sexo</option>
+                            <option>Masculino</option>
+                            <option>Feminino</option>
+                        </select>
                     </div>
                     <div class="form-group col-md-4">
-                        <label for="idQuantAt">Estoque atual</label>
-                        <input type="number" class="form-control" id="idQuantAt" required>
+                        <label for="idDate">Data de Nasc.</label>
+                        <input type="date" name="dtNascimento" class="form-control" id="idDate" required>
                     </div>
-                   
+                </div>
+                <div class="form-group">
+                    <label for="idEmail">E-mail</label>
+                    <input type="email" class="form-control" id="idEmail" name="email" placeholder="E-mail" required>
+                </div>
+                <div class="form-group">
+                    <label for="idSetor">Setor<i class="importante">*</i></label>
+                    <select id="idSetor" class="form-control" name="setor" required>
+                        <option>...</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="idFuncao">Função<i class="importante">*</i></label>
+                    <select id="idFuncao" class="form-control" name="funcao" required>
+                        <option>...</option>
+                    </select>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="cep">CEP<i class="importante">*</i></label>
+                        <input type="text" class="form-control" id="cep" name="cep" value="" placeholder="CEP" required maxlength="9"
+                        onblur="pesquisacep(this.value);">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="cidade">Cidade</label>
+                        <input type="text" class="form-control" id="cidade" name="cidade" placeholder="Cidade" required>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="uf">Estado</label>
+                        <input type="text" class="form-control" id="uf" name="uf" required >
+                    </div>                    
                 </div>
 
-
-
-
+                <div class="form-row">
+                    <div class="form-group col-md-7">
+                        <label for="logradouro">Logradouro</label>
+                        <input type="text" class="form-control" id=rua name="logradouro"  required>
+                    </div>
+                    <div class="form-gorup col-md-1">
+                        <label for="numero">Número<i class="importante">*</i></label>
+                        <input type="number" class="form-control" id="numero" name="numero" >
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="complemento">Complemento</label>
+                        <input type="text" class="form-control" id="complemento" name="complemento">
+                    </div>
+                </div>
                 <div class="form-control-plaintext">
-                    <span style="color: #7c7c7c;">Descrição do produto</span>
+                    <span style="color: #7c7c7c;">Observações</span>
                     <textarea class="form-control valid" cols="30" rows="6"></textarea>
 
                 </div>
-
+                
+           
                 <button type="submit" class="btn btn-primary">Cadastrar</button>
                 <button type="submit" class="btn btn-danger" style="float: right;">Cancelar</button>
             </form>
         </div>
     </div>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/popper.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 
 </html>

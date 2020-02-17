@@ -1,7 +1,13 @@
 @charset "utf-8";
-iframe#janelaPed {
-    width: 700px;
-    height: 250px;
-    border: none;
-    overflow: hidden;
+.box {
+    height: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: 5px 0 5px 5px solid #ffffff;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.txt {
+    padding: 10px;
 }

@@ -2,15 +2,15 @@
 <html lang="pt-br">
 
 <head>
-    <title>Cadastrar Fornecedor</title>
+    <title>Cadastrar Cliente</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/98046bca06.js" crossorigin="anonymous"></script>
 </head>
 
@@ -19,7 +19,7 @@
     <div class="wrapper d-flex align-items-stretch">
         <nav id="sidebar">
             <div class="p-4 pt-5">
-                <a href="#" class="img logo rounded-square mb-5" style="background-image: url(images/Logo2.png);"></a>
+                <a href="#" class="img logo rounded-square mb-5" style="background-image: url(/images/Logo2.png);"></a>
                 <ul class="list-unstyled components mb-5">
                     <li class="active">
                         <a href="#idCadastro" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><span class="fa fa-list-alt"> Cadastrar</span></a>
@@ -238,7 +238,6 @@
             </div>
         </nav>
 
-
         <!-- Page Content  -->
         <div id="content" class="p-4 p-md-5">
 
@@ -272,7 +271,7 @@
                 </div>
             </nav>
 
-            <h2 class="mb-4 fas fa-truck"> Cadastrar Fornecedor</h2>
+            <h2 class="mb-4">Cliente</h2>
             <form>
                 <div class="form-group">
                     <label for="idNome">Nome<i class="importante">*</i></label>
@@ -284,14 +283,15 @@
                         <input type="text" class="form-control" id="idCpf" placeholder="CPF/CNPJ" required>
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="idTipoClie">Tipo de Fornecedor<i class="importante">*</i></label>
+                        <label for="idTipoClie">Tipo de Cliente<i class="importante">*</i></label>
                         <select id="idTipoClie" class="form-control" required>
-                  <option selected>Escolher...</option>
-                  <option>Fisico</option>
-                  <option>Juridico</option>
-                </select>
+                            <option selected>Escolher...</option>
+                            <option>Fisico</option>
+                            <option>Juridico</option>
+                         </select>
                     </div>
                 </div>
+
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="idEmail">E-mail</label>
@@ -301,8 +301,8 @@
                         <label for="idTelefone">Telefone<i class="importante">*</i></label>
                         <input type="text" class="form-control" id="idTelefone" placeholder="Telefone" required>
                     </div>
-
                 </div>
+
                 <div class="form-row">
                     <div class="form-group col-md-4">
                         <label for="inputCEP">CEP<i class="importante">*</i></label>
@@ -318,37 +318,41 @@
                             <option selected>Escolher...</option>
                             <option>...</option>
                         </select>
-                    </div>                    
+                    </div>
                 </div>
 
                 <div class="form-row">
                     <div class="form-group col-md-7">
                         <label for="idEndereco">Endereço</label>
-                        <input type="text" class="form-control" id="idEndereco" name="endereco"  required>
+                        <input type="text" class="form-control" id="idEndereco" name="endereco" required>
                     </div>
                     <div class="form-gorup col-md-1">
                         <label for="idNumero">Número<i class="importante">*</i></label>
-                        <input type="number" class="form-control" id="idNumero" name="numero" >
+                        <input type="number" class="form-control" id="idNumero" name="numero">
                     </div>
                     <div class="form-group col-md-4">
                         <label for="idComplemento">Complemento</label>
                         <input type="text" class="form-control" id="idComplemento" name="complemento">
                     </div>
                 </div>
-                
-                <div class="form-group">
-
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="limiteCredito">Limite de credito</label>
+                        <input type="text" class="form-control" name="limiteCredito" id="limiteCredito" readonly>
+                        <input type="checkbox" name="limiteCredito" id="limiteCredito">Habilitar limite de credito?
+                    </div>
                 </div>
+
                 <button type="submit" class="btn btn-primary">Cadastrar</button>
                 <button type="submit" class="btn btn-danger" style="float: right;">Cancelar</button>
             </form>
         </div>
     </div>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/popper.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 
 </html>
