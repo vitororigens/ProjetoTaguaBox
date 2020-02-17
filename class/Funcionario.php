@@ -74,7 +74,15 @@
         public function setFuncao($funcao) {
             $this->funcao = $funcao;
         }
-        
+     	
+     	public function CapturarTela() {
+     		$dados = array(
+     			"nomePessoa" => $_POST['nome']);
+     		
+     	}
+     	public function CadastrarFunc() {
+     	
+     	}   
 	}
 
  ?>
