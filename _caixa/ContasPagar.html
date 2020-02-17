@@ -2,16 +2,15 @@
 <html lang="pt-br">
 
 <head>
-    <title>Produtos</title>
+    <title>Contas a pagar</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/98046bca06.js" crossorigin="anonymous"></script>
 </head>
 
@@ -20,7 +19,7 @@
     <div class="wrapper d-flex align-items-stretch">
         <nav id="sidebar">
             <div class="p-4 pt-5">
-                <a href="#" class="img logo rounded-square mb-5" style="background-image: url(images/Logo2.png);"></a>
+                <a href="#" class="img logo rounded-square mb-5" style="background-image: url(/images/Logo2.png);"></a>
                 <ul class="list-unstyled components mb-5">
                     <li class="active">
                         <a href="#idCadastro" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><span class="fa fa-list-alt"> Cadastrar</span></a>
@@ -238,7 +237,6 @@
 
             </div>
         </nav>
-
         <!-- Page Content  -->
         <div id="content" class="p-4 p-md-5">
 
@@ -256,7 +254,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">Home</a>
+                                <a class="nav-link" href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Sobre</a>
@@ -271,63 +269,81 @@
                     </div>
                 </div>
             </nav>
-            <nav class="navbar navbar-expand-sm">
-                <div class="container-fluid">
-                    <button type="submit" class="btn btn-primary"><a href="CadastrarProduto.html" style="color:green;">Adicionar</a></button>
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="nav navbar-nav ml-auto">
-                            <li class="nav-item active">
+            <h2 class="mb-4">Cadastrar Serviços</h2>
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="idCodServ">Descrição do pagamento</label>
+                        <input type="text" class="form-control" id="idDecPag" required>
+                    </div>
 
-                                <form class="form-inline">
-                                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
-                                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Procurar</button>
-                                </form>
+                    <div class="form-group col-md-4">
+                        <label for="idServico">Plano de contas</label>
+                        <input type="text" class="form-control" id="idServico" required>
+                    </div>
 
-                            </li>
-
-                        </ul>
+                    <div class="form-group col-md-4">
+                        <label for="idOcorrencia">Ocorrência</label>
+                        <select class="form-control" id="idOcorrencia">
+                            <option value="#">Unica</option>
+                            <option value="#">Parcelada</option>
+                        </select>
                     </div>
                 </div>
-            </nav>
 
-            <h2 class="mb-4">Vidros engenharia - Temperado</h2>
-            <table class="table table-sm">
-                <thead>
-                    <tr>
-                        <th scope="col">Cod.</th>
-                        <th scope="col">Descrição</th>
-                        <th scope="col">Valor (m²)</th>
-                        <th scope="col">Prazo(Dias úteis)</th>
-                        <th scope="col">Taxa* (%)</th>
-                        <th scope="col">Prazo* (Dias úteis)</th>
-                        <th scope="col">Ação</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td scope="row">VT86</td>
-                        <td>Incolor 8</td>
-                        <td>167,09</td>
-                        <td>05</td>
-                        <td>20%</td>
-                        <td>03</td>
-                        <td>
-                            <a href="#" class="btn btn-outline-warning" title="Editar"><i class="fas fa-user-edit"></i></a>
-                            <a href="#" class="btn btn-outline-danger" title="Remove"><i class="fas fa-remove"></i></a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
 
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="idTipoServ">Valor bruto (R$)</label>
+                        <input type="text" class="form-control" id="idTipoServ" placeholder="0,00">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="idValorUniServ">Juros (R$)</label>
+                        <input type="text" class="form-control" id="idValorUniServ" placeholder="0,00" required>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="idComServ">Descontos (R$)</label>
+                        <input type="text" class="form-control" id="idComServ" placeholder="0,00">
+                    </div>
+
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-3">
+                        <label for="idEntidade">Entidade</label>
+                        <input type="text" class="form-control" id="idEntidade">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="#">******</label>
+                        <input type="text" class="form-control" id="#" required>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="idDataComp">Data da competência</label>
+                        <input type="date" class="form-control" id="idDataComp">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="idDataVenc">Data do vencimento</label>
+                        <input type="date" class="form-control" id="idDataVenc">
+                    </div>
+
+
+
+                </div>
+                <div class="form-control-plaintext">
+                    <span style="color: #7c7c7c;">Descrição do serviço</span>
+                    <textarea class="form-control valid" cols="30" rows="6"></textarea>
+
+                </div>
+
+                <button type="submit" class="btn btn-primary">Cadastrar</button>
+            </form>
         </div>
-
     </div>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/popper.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 
 </html>

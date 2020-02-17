@@ -2,29 +2,30 @@
 <html lang="pt-br">
 
 <head>
-    <title>Cadastrar Serviços</title>
+    <title>Orçamento</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/98046bca06.js" crossorigin="anonymous"></script>
     <style>
         aside {
             display: block;
             float: left;
-            padding: 0px 50px;
+            padding: px 50px;
         }
         
         section {
             display: block;
-            width: 300px;
+            width: 400px;
             float: left;
             border-right: 1px solid #aeaeae;
             padding-right: 50px;
+            padding-top: 50px;
         }
     </style>
 </head>
@@ -34,7 +35,7 @@
     <div class="wrapper d-flex align-items-stretch">
         <nav id="sidebar">
             <div class="p-4 pt-5">
-                <a href="#" class="img logo rounded-square mb-5" style="background-image: url(images/Logo2.png);"></a>
+                <a href="#" class="img logo rounded-square mb-5" style="background-image: url(/images/Logo2.png);"></a>
                 <ul class="list-unstyled components mb-5">
                     <li class="active">
                         <a href="#idCadastro" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><span class="fa fa-list-alt"> Cadastrar</span></a>
@@ -282,55 +283,81 @@
                 </div>
             </nav>
             <form>
-                <section>
-                    <h3 class="mb-4 " style="color: #aeaeae; ">Projeto</h3>
-                    <div class="form-group ">
-                        <label for="idVidMetro ">metragem do projeto (m²)</label>
-                        <input type="number " class="form-control " name="vidroMetro " id="idVidMetro " placeholder="0 " readonly>
+                <h2 class="mb-4">Novo orçamento</h2>
+                <h3 class="mb-4" style="color: #aeaeae;">Detalhes do projeto</h3>
+                <div class=" form-group ">
+                    <label for=" projeto ">Selecione seu projeto</label>
+                    <select class=" form-control " name=" projeto " id=" projeto ">
+                        <option value=" # ">porta varanda 4 folhas</option>
+                        <option value=" # ">porta varanda 2 folhas</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="idCorVid">Cor do vidro</label>
+                    <select class="form-control" name="corVidro" id="idCorVid">
+                        <option value="#">Bronze</option>
+                        <option value="#">Fumê</option>
+                        <option value="#" selected>Incolor</option>
+                        <option value="#">Verde</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="idCorAces">Acessórios</label>
+                        <select class="form-control" name="corACessorio" id="idCorAces">
+                            <option value="#">Branco</option>
+                            <option value="#">Brilho</option>
+                            <option value="#">Bronze</option>
+                            <option value="#">Champanhe</option>
+                            <option value="#" selected>Fosco</option>
+                            <option value="#">Preto</option>
+                        </select>
                     </div>
-                    <div class="form-group ">
-                        <label for="idVedapoera "> valor Vidro(sub-total)</label>
-                        <input type="number " class="form-control " name="valorVidro " id="idVidro " placeholder="R$ 0,00 " readonly>
+                    <div class="form-group col-md-4">
+                        <label for="idEspessura">Espessura</label>
+                        <select class="form-control" name="Espessura id=" idEspessura ">
+                            <option value=" # ">4mm</option>
+                            <option value=" # ">6mm</option>
+                          <option value=" # " selected>8mm</option>
+                            <option value=" # ">10mm</option>
+                            <option value=" # ">12mm</option>
+                            <option value=" # ">15mm</option>
+                            <option value=" 3 ">19mm</option>
+                        </select>
                     </div>
-                    <div class="form-group ">
-                        <label for="idCttp ">valor CTTP</label>
-                        <input type="number " class="form-control " name="cttp " id="idCttp " placeholder="R$ 0,00 " readonly>
-                    </div>
-                    <div class="form-group ">
-                        <label for="idPuFixo ">PU-Fixo</label>
-                        <input type="number " class="form-control " name="puFixo " id="idPuFixo " placeholder="R$ 0,00 " readonly>
-                    </div>
-                    <div class="form-group ">
-                        <label for="idPuVaranda ">PU-Varanda</label>
-                        <input type="number " class="form-control " name="puVaranda " id="idPuVaranda " placeholder="R$ 0,00 " readonly>
-                    </div>
-                    <div class="form-group ">
-                        <label for="idVedapoera ">Vedapoera</label>
-                        <input type="number " class="form-control " name="vedapoera " id="idVedapoera " placeholder="R$ 0,00 " readonly>
-                    </div>
-                    <div class="form-group ">
-                        <label for="idVedapress ">Vedapress</label>
-                        <input type="number " class="form-control " name="valorVedapress " id="idVedapress " placeholder="R$ 0,00 " readonly>
-                    </div>
-                    <div class="form-group ">
-                        <label for="idValor ">Valor total</label>
-                        <input type="number " class="form-control " name="valor " id="idValor " placeholder="R$ 0,00 " readonly>
-                    </div>
-                    <div class="form-group ">
-                        <label for="idValorDesc ">Valor total com desconto</label>
-                        <input type="number " class="form-control " name="valorDesc " id="idValorDesc " placeholder="R$ 0,00 " readonly>
-                    </div>
-                </section>
-                <aside>
-
-                </aside>
-            </form>
+                    <div class="form-group col-md-4 ">
+                        <label for="idPuxador ">Puxador</label>
+                        <select class="form-control " name="puxador " id="idPuxador ">
+                            <option value="# ">Selecione...</option>
+                            <option value="# "></option>
+                            <option value="# "></option>
+                            <option value="# "></option>
+                        </select>
+                    </div>   
+                </div>
+        <h3 class=" mb-4 " style=" color: #aeaeae; ">Medidas</h3>
+        <div class=" form-row ">
+            <div class=" form-group col-md-6 ">
+                <label for=" idLargura ">largura vão</label>
+                <input type=" number " class=" form-control " name=" largura " id=" idLargura "> 
+            </div>
+            
+            <div class=" form-group col-md-6 ">
+                <label for=" idAltura ">Altura vão</label>
+                <input type=" number " class=" form-control " name=" altura " id=" idAltura ">
+            </div>
         </div>
+        <div>
+        <button type=" submit " class=" btn btn-primary ">Calcular</button>
+        <button type="submit " class="btn btn-danger " style="float: right; ">Cancelar</button>
+        </div>
+        </form>
+    </div>
 
-        <script src="js/jquery.min.js "></script>
-        <script src="js/popper.js "></script>
-        <script src="js/bootstrap.min.js "></script>
-        <script src="js/main.js "></script>
+    <script src="/js/jquery.min.js "></script>
+    <script src="/js/popper.js "></script>
+    <script src="/js/bootstrap.min.js "></script>
+    <script src="/js/main.js "></script>
 </body>
 
 </html>
