@@ -282,23 +282,13 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Contato</a>
                             </li>
-                            <li class="nav-item active usuario" onClick="navUser()" >
-                                <a class="nav-link" href="#"  ><i class="fas fa-user-alt"></i> Vitor Abreu <i class="fas fa-caret-down"></i>
+                            <li class="nav-item active usuario" onClick="navUser()">
+                                <a class="nav-link" href="#"><i class="fas fa-user-alt"></i> Vitor Abreu <i class="fas fa-caret-down"></i>
                                     <div class="hidden" id="mostrarUser" >
                                         <img src="images/icone-user.jpg" alt="#"> <br>
                                         <i>vitor dos Santos Abreu</i>
                                         <button  class="bLeft btn-dark">Meus dados</button>
                                         <button class="bRight btn-dark">Sair</button>
-                                        <script>
-                                              function navUser(){
-                                                if (document.getElementById('mostrarUser').style.display == 'none'){
-                                                    document.getElementById('mostrarUser').style.display = 'block'
-                                                } else{
-                                                    document.getElementById("mostrarUser").style.display = 'none'
-                                                }
-                        }
-                                        </script>
-                                      
                                     </div>
                                 </a>
                             </li>
@@ -306,22 +296,6 @@
                     </div>
                 </div>
             </nav>
-            <div class="hidden" id="mostrarUser">
-                <img src="images/icone-user.jpg" alt="#"> <br>
-                <i>vitor dos Santos Abreu</i>
-                <button class="bLeft btn-dark">Meus dados</button>
-                <button class="bRight btn-dark">Sair</button>
-                <script>
-                    function navUser() {
-                        if (document.getElementById('mostrarUser').style.display == 'none') {
-                            document.getElementById('mostrarUser').style.display = 'block'
-                        } else {
-                            document.getElementById("mostrarUser").style.display = 'none'
-                        }
-                    }
-                </script>
-
-            </div>
             <h2 class="mb-4">Bem vindo, Vitor Abreu! </h2>
             <div class="box box-light">
                 <div class="box-body">
@@ -486,7 +460,7 @@
                 </div>
             </div>
         </div>
-
+        <script src="js/funcoes.js"></script>
         <script src="js/jquery.min.js"></script>
         <script src="js/popper.js"></script>
         <script src="js/bootstrap.min.js"></script>
