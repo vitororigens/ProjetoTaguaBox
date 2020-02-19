@@ -1,0 +1,113 @@
+<html>
+
+<head>
+    <title>Formatar Dados</title>
+    <style type="text/css">
+        .tabela {
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            font-size: 10px;
+        }
+    </style>
+    <script>
+        function formatar(mascara, documento) {
+            var i = documento.value.length;
+            var saida = mascara.substring(0, 1);
+            var texto = mascara.substring(i)
+
+            if (texto.substring(0, 1) != saida) {
+                documento.value += texto.substring(0, 1);
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <table width="301" height="160" border="0" cellspacing="0" class="tabela">
+        <tr>
+            <td height="34" colspan="2" valign="top">Este script formata qualquer tipo de campo.<br> Veja o Exemplo abaixo</td>
+        </tr>
+        <tr>
+            <td width="32" height="24">Data:</td>
+            <td width="265"><input type="text" name="data" maxlength="10" OnKeyPress="formatar('##/##/####', this)"></td>
+        </tr>
+        <tr>
+            <td height="24">Tel.:</td>
+            <td><input type="text" name="tel" maxlength="12" OnKeyPress="formatar('##-####-####', this)"></td>
+        </tr>
+        <tr>
+            <td height="24">Cep:</td>
+            <td><input type="text" name="cep" maxlength="9" OnKeyPress="formatar('#####-###', this)"></td>
+        </tr>
+        <tr>
+            <td height="24">CPF:</td>
+            <td><input type="text" name="cpf" maxlength="14" OnKeyPress="formatar('###.###.###-##', this)"></td>
+        </tr>
+        <tr>
+            <td height="24">Hora:</td>
+            <td><input type="text" name="hora" maxlength="5" OnKeyPress="formatar('##:##', this)"></td>
+        </tr>
+        <tr>
+            <td colspan="2" valign="bottom">e assim por diante...<br /> &eacute; um codigo bem simples e de grande utilidade. </td>
+        </tr>
+    </table>
+</body>
+
+</html>
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55
+<html>
+
+<head>
+    <title>Formatar Dados</title>
+    <style type="text/css">
+        .tabela {
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            font-size: 10px;
+        }
+    </style>
+    <script>
+        function formatar(mascara, documento) {
+            var i = documento.value.length;
+            var saida = mascara.substring(0, 1);
+            var texto = mascara.substring(i)
+
+            if (texto.substring(0, 1) != saida) {
+                documento.value += texto.substring(0, 1);
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <table width="301" height="160" border="0" cellspacing="0" class="tabela">
+        <tr>
+            <td height="34" colspan="2" valign="top">Este script formata qualquer tipo de campo.<br> Veja o Exemplo abaixo</td>
+        </tr>
+        <tr>
+            <td width="32" height="24">Data:</td>
+            <td width="265"><input type="text" name="data" maxlength="10" OnKeyPress="formatar('##/##/####', this)"></td>
+        </tr>
+        <tr>
+            <td height="24">Tel.:</td>
+            <td><input type="text" name="tel" maxlength="12" OnKeyPress="formatar('##-####-####', this)"></td>
+        </tr>
+        <tr>
+            <td height="24">Cep:</td>
+            <td><input type="text" name="cep" maxlength="9" OnKeyPress="formatar('#####-###', this)"></td>
+        </tr>
+        <tr>
+            <td height="24">CPF:</td>
+            <td><input type="text" name="cpf" maxlength="14" OnKeyPress="formatar('###.###.###-##', this)"></td>
+        </tr>
+        <tr>
+            <td height="24">Hora:</td>
+            <td><input type="text" name="hora" maxlength="5" OnKeyPress="formatar('##:##', this)"></td>
+        </tr>
+        <tr>
+            <td colspan="2" valign="bottom">e assim por diante...<br /> &eacute; um codigo bem simples e de grande utilidade. </td>
+        </tr>
+    </table>
+</body>
+
+</html>
