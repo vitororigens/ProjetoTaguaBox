@@ -20,7 +20,7 @@
     <div class="wrapper d-flex align-items-stretch">
         <nav id="sidebar">
             <div class="p-4 pt-5">
-                <a href="#" class="img logo rounded-square mb-5" style="background-image: url(images/Logo2.png);"></a>
+                <a href="#" class="img logo rounded-square mb-5" style="background-image: url(/images/Logo2.png);"></a>
                 <ul class="list-unstyled components mb-5">
                     <li class="active">
                         <a href="#idCadastro" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><span class="fa fa-list-alt"> Cadastrar</span></a>
@@ -284,6 +284,22 @@
                             </li>
                             <li class="nav-item active usuario" onClick="navUser()">
                                 <a class="nav-link" href="#"><i class="fas fa-user-alt"></i> Vitor Abreu <i class="fas fa-caret-down"></i>
+                                    <div class="hidden" id="mostrarUser">
+                                        <img src="/images/icone-user.jpg" alt="#"> <br>
+                                        <i>vitor dos Santos Abreu</i>
+                                        <button class="bLeft btn-dark">Meus dados</button>
+                                        <button class="bRight btn-dark">Sair</button>
+                                        <script>
+                                            function navUser() {
+                                                if (document.getElementById('mostrarUser').style.display == 'none') {
+                                                    document.getElementById('mostrarUser').style.display = 'block'
+                                                } else {
+                                                    document.getElementById("mostrarUser").style.display = 'none'
+                                                }
+                                            }
+                                        </script>
+                        
+                                    </div>
                                 
                                 </a>
                             </li>
@@ -291,22 +307,7 @@
                     </div>
                 </div>
             </nav>
-            <div class="hidden" id="mostrarUser">
-                <img src="images/icone-user.jpg" alt="#"> <br>
-                <i>vitor dos Santos Abreu</i>
-                <button class="bLeft btn-dark">Meus dados</button>
-                <button class="bRight btn-dark">Sair</button>
-                <script>
-                    function navUser() {
-                        if (document.getElementById('mostrarUser').style.display == 'none') {
-                            document.getElementById('mostrarUser').style.display = 'block'
-                        } else {
-                            document.getElementById("mostrarUser").style.display = 'none'
-                        }
-                    }
-                </script>
-
-            </div>
+         
             <h2 class="mb-4">Nova venda</h2>
             <h3 class="mb-3" style="color: #aeaeae;">Dados da venda</h3>
             <div class="form-row">
