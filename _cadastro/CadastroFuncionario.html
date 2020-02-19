@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/98046bca06.js" crossorigin="anonymous"></script>
-    <script src="/js/cep.js"></script>
 </head>
 
 <body>
@@ -279,22 +278,22 @@
             <form method="POST" action="#">
                 <div class="form-group">
                     <label for="idNome">Nome<i class="importante">*</i></label>
-                    <input type="text" class="form-control" id="idNome" name="nome" laceholder="Nome" required>
+                    <input type="text" class="form-control" id="idNome" name="nome" placeholder="Nome">
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="idCpf">CPF<i class="importante">*</i ></label>
-                        <input type="text" class="form-control" id="idCpf" name="cpf" placeholder="CPF" required>
+                        <input type="text" class="form-control" id="idCpf" name="cpf" placeholder="CPF" maxlength="14" OnKeyPress="formatar('###.###.###-##', this)">
                     </div>
                     <div class="form-group col-md-6">
                         <label for="idRg">RG<i class="importante">*</i></label>
-                        <input type="text" class="form-control" id="idRg" name="rg" placeholder="RG" required>
+                        <input type="text" class="form-control" id="idRg" name="rg" placeholder="RG">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-4">
                         <label for="idTelefone">Telefone<i class="importante">*</i></label>
-                        <input type="text" class="form-control" id="idTelefone" name="telefone" placeholder="Telefone" required>
+                        <input type="text" class="form-control" id="idTelefone" name="telefone" placeholder="Telefone" maxlength="14" OnKeyPress="formatar('##-# ####-####', this)">
                     </div>
                     <div class="form-group col-md-4">
                         <label for="inputEstado">Sexo</label>
@@ -325,54 +324,57 @@
                         <option>...</option>
                     </select>
                 </div>
-                
+
                 <div class="form-row">
-                    <div class="form-group col-md-4">
+                    <div class="form-group col-md-3">
                         <label for="cep">CEP<i class="importante">*</i></label>
-                        <input type="text" class="form-control" id="cep" name="cep" value="" placeholder="CEP" required maxlength="9"
-                        onblur="pesquisacep(this.value);">
+                        <input type="text" class="form-control" id="cep" name="cep" value="" maxlength="9" onblur="pesquisacep(this.value);" onkeypress="formatar('#####-###', this)">
+                    </div>
+                    <div class="form-group col-md-1">
+                        <label for="uf">Estado</label>
+                        <input type="text" class="form-control" id="uf" name="uf">
                     </div>
                     <div class="form-group col-md-4">
                         <label for="cidade">Cidade</label>
-                        <input type="text" class="form-control" id="cidade" name="cidade" placeholder="Cidade" required>
+                        <input type="text" class="form-control" id="cidade" name="cidade">
                     </div>
                     <div class="form-group col-md-4">
-                        <label for="uf">Estado</label>
-                        <input type="text" class="form-control" id="uf" name="uf" required >
-                    </div>                    
+                        <label for="bairro">Bairro</label>
+                        <input type="text" class="form-control" id="bairro" name="bairro">
+                    </div>
                 </div>
 
                 <div class="form-row">
-                    <div class="form-group col-md-7">
+                    <div class="form-group col-md-6">
                         <label for="logradouro">Logradouro</label>
-                        <input type="text" class="form-control" id=rua name="logradouro"  required>
+                        <input type="text" class="form-control" id=rua name="logradouro">
                     </div>
-                    <div class="form-gorup col-md-1">
+                    <div class="form-gorup col-md-2">
                         <label for="numero">Número<i class="importante">*</i></label>
-                        <input type="number" class="form-control" id="numero" name="numero" >
+                        <input type="number" class="form-control" id="numero" name="numero">
                     </div>
                     <div class="form-group col-md-4">
                         <label for="complemento">Complemento</label>
                         <input type="text" class="form-control" id="complemento" name="complemento">
                     </div>
                 </div>
-                <div class="form-control-plaintext">
-                    <span style="color: #7c7c7c;">Observações</span>
-                    <textarea class="form-control valid" cols="30" rows="6"></textarea>
+                <div class="form-control-plaintext ">
+                    <span style="color: #7c7c7c; ">Observações</span>
+                    <textarea class="form-control valid " cols="30 " rows="6 "></textarea>
 
                 </div>
-                
-           
-                <button type="submit" class="btn btn-primary">Cadastrar</button>
-                <button type="submit" class="btn btn-danger" style="float: right;">Cancelar</button>
+
+
+                <button type="submit " class="btn btn-primary ">Cadastrar</button>
+                <button type="submit " class="btn btn-danger " style="float: right; ">Cancelar</button>
             </form>
         </div>
     </div>
-
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/popper.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/main.js"></script>
+    <script src="/js/funcoes.js "></script>
+    <script src="/js/jquery.min.js "></script>
+    <script src="/js/popper.js "></script>
+    <script src="/js/bootstrap.min.js "></script>
+    <script src="/js/main.js "></script>
 </body>
 
 </html>
