@@ -275,16 +275,16 @@
             <form>
                 <div class="form-group">
                     <label for="idNome">Nome<i class="importante">*</i></label>
-                    <input type="text" class="form-control" id="idNome" placeholder="Nome" required>
+                    <input type="text" class="form-control" id="idNome">
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-8">
                         <label for="idCpf">CPF / CNPJ<i class="importante">*</i></label>
-                        <input type="text" class="form-control" id="idCpf" placeholder="CPF / CNPJ">
+                        <input type="text" class="form-control" id="idCpf">
                     </div>
                     <div class="form-group col-md-4">
                         <label for="idTipoClie">Tipo de Cliente<i class="importante">*</i></label>
-                        <select id="idTipoClie" class="form-control" required>
+                        <select id="idTipoClie" class="form-control">
                             <option selected>Escolher...</option>
                             <option>Fisico</option>
                             <option>Juridico</option>
@@ -295,18 +295,18 @@
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="idEmail">E-mail</label>
-                        <input type="text" class="form-control" id="idEmail" placeholder="E-mail" required>
+                        <input type="text" class="form-control" id="idEmail">
                     </div>
                     <div class="form-group col-md-6">
                         <label for="idTelefone">Telefone<i class="importante">*</i></label>
-                        <input type="text" class="form-control" id="idTelefone" placeholder="Telefone" maxlength="14" OnKeyPress="formatar('##-# ####-####', this)">
+                        <input type="text" class="form-control" id="idTelefone" maxlength="14" OnKeyPress="formatar('##-# ####-####', this)">
                     </div>
                 </div>
 
                 <div class="form-row">
                     <div class="form-group col-md-3">
                         <label for="cep">CEP<i class="importante">*</i></label>
-                        <input type="text" class="form-control" id="cep" name="cep" value="" maxlength="9" onblur="pesquisacep(this.value);" onkeypress="formatar('#####-###', this)">
+                        <input type="text" class="form-control" id="cep" name="cep" value="" maxlength="9" onblur="pesquisacep(this.value);" onkeypress="formatar('#####-###', this)" placeholder="Digite para buscar">
                     </div>
                     <div class="form-group col-md-1">
                         <label for="uf">Estado</label>

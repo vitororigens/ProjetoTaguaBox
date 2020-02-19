@@ -274,53 +274,53 @@
                 </div>
             </nav>
 
-            <h2 class="mb-4">Funcionario</h2>
+            <h2 class="mb-4">Funcionário</h2>
             <form method="POST" action="#">
                 <div class="form-group">
                     <label for="idNome">Nome<i class="importante">*</i></label>
-                    <input type="text" class="form-control" id="idNome" name="nome" placeholder="Nome">
+                    <input type="text" class="form-control" id="idNome" name="nome">
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="idCpf">CPF<i class="importante">*</i ></label>
-                        <input type="text" class="form-control" id="idCpf" name="cpf" placeholder="CPF" maxlength="14" OnKeyPress="formatar('###.###.###-##', this)">
+                        <input type="text" class="form-control" id="idCpf" name="cpf" maxlength="14" OnKeyPress="formatar('###.###.###-##', this)">
                     </div>
                     <div class="form-group col-md-6">
                         <label for="idRg">RG<i class="importante">*</i></label>
-                        <input type="text" class="form-control" id="idRg" name="rg" placeholder="RG">
+                        <input type="text" class="form-control" id="idRg" name="rg">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-4">
                         <label for="idTelefone">Telefone<i class="importante">*</i></label>
-                        <input type="text" class="form-control" id="idTelefone" name="telefone" placeholder="Telefone" maxlength="14" OnKeyPress="formatar('##-# ####-####', this)">
+                        <input type="text" class="form-control" id="idTelefone" name="telefone" maxlength="14" OnKeyPress="formatar('##-# ####-####', this)">
                     </div>
                     <div class="form-group col-md-4">
                         <label for="inputEstado">Sexo</label>
-                        <select id="inputEstado" name="sexo" class="form-control" required>
-                            <option selected>Sexo</option>
+                        <select id="inputEstado" name="sexo" class="form-control">
+                            <option selected>Selecione</option>
                             <option>Masculino</option>
                             <option>Feminino</option>
                         </select>
                     </div>
                     <div class="form-group col-md-4">
                         <label for="idDate">Data de Nasc.</label>
-                        <input type="date" name="dtNascimento" class="form-control" id="idDate" required>
+                        <input type="date" name="dtNascimento" class="form-control" id="idDate">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="idEmail">E-mail</label>
-                    <input type="email" class="form-control" id="idEmail" name="email" placeholder="E-mail" required>
+                    <input type="email" class="form-control" id="idEmail" name="email">
                 </div>
                 <div class="form-group">
                     <label for="idSetor">Setor<i class="importante">*</i></label>
-                    <select id="idSetor" class="form-control" name="setor" required>
+                    <select id="idSetor" class="form-control" name="setor">
                         <option>...</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <label for="idFuncao">Função<i class="importante">*</i></label>
-                    <select id="idFuncao" class="form-control" name="funcao" required>
+                    <select id="idFuncao" class="form-control" name="funcao">
                         <option>...</option>
                     </select>
                 </div>
