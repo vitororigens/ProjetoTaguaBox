@@ -10999,8 +10999,6 @@ h5,
     position: block;
 }
 
-
-
 .navbar-btn {
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -11129,41 +11127,17 @@ a[data-toggle="collapse"] {
     color: rgba(255, 255, 255, 0.5);
 }
 
+
 /*a parti daqui style fora do bootstrap*/
 
-
-.hidden {
-    border: 1px solid #000;
-    width: 200px;
-    height: 150px;
-    text-align: center;
-    font-size: 0.9em;
-    display: none;
-    float: right;
-    margin-top: 18px;
-    margin-left: -45px;
-    position: absolute;
-
-}
-
-.hidden button {
-    margin-top: 20px;
-}
-.bRight
- {
-        margin-left: 20px;
-}
-
-.bLeft {
-         margin-right: 20px;
-}
-
-#jaIframe{
+#jaIframe {
     position: absolute;
 }
 
-.importante{
+.importante {
     color: red;
 }
 
-
+.iconeUser {
+    float: right;
+}
